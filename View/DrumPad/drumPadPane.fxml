@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="drumPadPane" prefHeight="576.0" prefWidth="963.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DrumPad.DrumPadPaneController">
+   <children>
+   
+      <ImageView fx:id="drum36" fitHeight="498.0" fitWidth="349.0" layoutX="299.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@drumGraphics/01_trans.png" /></image>
+      </ImageView>
+   
+      <ImageView fx:id="drum44" fitHeight="153.0" fitWidth="183.0" layoutX="81.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@drumGraphics/08_trans.png" /></image>
+      </ImageView>
+   
+
+      <ImageView fx:id="drum45" fitHeight="169.0" fitWidth="162.0" layoutX="320.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@drumGraphics/02_trans.png" /></image>
+      </ImageView>
+
+	  <ImageView fx:id="drum38" fitHeight="237.0" fitWidth="229.0" layoutX="211.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@drumGraphics/04_trans.png" /></image>
+      </ImageView>
+
+	  <ImageView fx:id="drum43" fitHeight="287.0" fitWidth="229.0" layoutX="503.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@drumGraphics/05_trans.png" /></image>
+      </ImageView>
+	  
+	  <ImageView fx:id="drum50" fitHeight="210.0" fitWidth="197.0" layoutX="470.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@drumGraphics/03_trans.png" /></image>
+      </ImageView>
+	  
+      <ImageView fx:id="drum49" fitWidth="225.0" layoutX="684.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@drumGraphics/06_trans.png" /></image>
+      </ImageView>
+	  
+      <ImageView fx:id="drum57" fitWidth="225.0" layoutX="116.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@drumGraphics/06_trans.png" /></image>
+      </ImageView>
+
+	  <ImageView fx:id="drum51" fitHeight="220.0" fitWidth="301.0" layoutX="630.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@drumGraphics/06_trans.png" /></image>
+      </ImageView>
+	  
+	  <ImageView fx:id="drum46" fitHeight="188.0" fitWidth="199.0" layoutX="69.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@drumGraphics/07_trans.png" /></image>
+      </ImageView>
+      
+	  <Ellipse fx:id="d45" layoutX="398.0" layoutY="149.0" radiusX="66.0" radiusY="59.0" style="-fx-opacity: 0;">
+      </Ellipse>
+	  
+      <Ellipse fx:id="d43" layoutX="618.0" layoutY="390.0" radiusX="99.0" radiusY="91.0" style="-fx-opacity: 0;">
+      </Ellipse>
+      
+	  <Ellipse fx:id="d57" layoutX="228.0" layoutY="153.0" radiusX="107.0" radiusY="80.0" style="-fx-opacity: 0;">
+      </Ellipse>
+	  
+      <Ellipse fx:id="d49" layoutX="797.0" layoutY="311.0" radiusX="107.0" radiusY="80.0" style="-fx-opacity: 0;">
+      </Ellipse>
+	  
+      <Ellipse fx:id="d50" layoutX="567.0" layoutY="132.0" radiusX="78.0" radiusY="72.0" style="-fx-opacity: 0;">
+      </Ellipse>
+	  
+      <Ellipse fx:id="d51" layoutX="780.0" layoutY="132.0" radiusX="143.0" radiusY="104.0" style="-fx-opacity: 0;">
+      </Ellipse>
+	  
+      <Ellipse fx:id="d38" layoutX="324.0" layoutY="407.0" radiusX="89.0" radiusY="80.0" style="-fx-opacity: 0;">
+      </Ellipse>
+	  
+      <Ellipse fx:id="d46" layoutX="172.0" layoutY="316.0" radiusX="95.0" radiusY="78.0" style="-fx-opacity: 0;">
+      </Ellipse>
+	  
+      <Ellipse fx:id="d36" layoutX="459.0" layoutY="476.0" radiusX="22.0" radiusY="75.0" style="-fx-opacity: 0;">
+       </Ellipse>
+    
+	<Ellipse fx:id="d44" layoutX="170.0" layoutY="504.0" radiusX="16.0" radiusY="49.0" style="-fx-opacity: 0;">
+    </Ellipse>
+   
+   </children>  
+</AnchorPane>

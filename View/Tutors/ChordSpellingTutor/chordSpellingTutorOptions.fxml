@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="621.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ChordSpellingOptionController">
+    <children>
+        <GridPane alignment="TOP_CENTER" hgap="10.0" layoutY="-16.0" prefHeight="406.0" prefWidth="626.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="40.0" />
+            </padding>
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" minHeight="25.0" prefHeight="50.0" prefWidth="515.0" style="-fx-font-weight: bold; -fx-font-size: 23;" text="Options" GridPane.columnIndex="1" />
+                <Label alignment="CENTER" prefHeight="21.0" prefWidth="171.0" text="Number of Questions" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="numQuestionsTextField" alignment="CENTER" prefHeight="26.0" prefWidth="321.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label fx:id="numQuestionsError" alignment="CENTER" prefHeight="21.0" prefWidth="370.0" text="This field must be a number from 1 to " textFill="RED" visible="false" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" />
+                <Label alignment="CENTER" prefHeight="16.0" prefWidth="202.0" text="Question Type" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Button fx:id="startBtn" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#startTutor" prefHeight="74.0" prefWidth="171.0" text="Start" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="6" />
+                <CheckBox fx:id="randomNotesCheckBox" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="21.0" prefWidth="171.0" text="Random Notes" GridPane.columnIndex="1" GridPane.rowIndex="7" GridPane.rowSpan="2">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font></CheckBox>
+                <Label alignment="CENTER" prefHeight="21.0" prefWidth="171.0" text="Chord Types" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+                <CheckBox fx:id="majorCheckBox" mnemonicParsing="false" text="Major" GridPane.columnIndex="1" GridPane.rowIndex="11">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin></CheckBox>
+                <CheckBox fx:id="minorCheckBox" mnemonicParsing="false" text="Minor" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                <CheckBox fx:id="augmentedCheckBox" mnemonicParsing="false" text="Augmented" GridPane.columnSpan="2" GridPane.rowIndex="10" />
+                <CheckBox fx:id="diminishedCheckBox" mnemonicParsing="false" text="Diminished" GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin></CheckBox>
+                <CheckBox fx:id="sixthCheckBox" mnemonicParsing="false" text="6th" GridPane.rowIndex="11" />
+                <CheckBox fx:id="seventhCheckBox" mnemonicParsing="false" text="7th" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.rowIndex="14" />
+                  <Button fx:id="deselectAllButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#deselectAll" prefHeight="31.0" prefWidth="189.0" text="Deselect All" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="12">
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </Button>
+                  <Button fx:id="selectAllButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selectAll" prefHeight="31.0" prefWidth="167.0" text="Select All" GridPane.columnSpan="2" GridPane.rowIndex="12">
+               <GridPane.margin>
+                  <Insets right="100.0" />
+               </GridPane.margin>
+            </Button>
+                <Label fx:id="selectionError" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="172.0" text="Please select an option" textFill="RED" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+
+
+            </children>
+            <columnConstraints>
+                <ColumnConstraints maxWidth="150.0" minWidth="70.0" prefWidth="90.0" />
+                <ColumnConstraints maxWidth="223.0" minWidth="124.0" prefWidth="171.0" />
+                <ColumnConstraints maxWidth="150.0" minWidth="70.0" prefWidth="90.0" />
+            </columnConstraints>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="30.0" />
+            </padding>
+            <rowConstraints>
+                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" valignment="CENTER" />
+                <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints maxHeight="22.0" prefHeight="22.0" />
+                <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints maxHeight="16.0" prefHeight="16.0" />
+                <RowConstraints maxHeight="23.0" minHeight="22.0" prefHeight="23.0" />
+            <RowConstraints maxHeight="23.0" minHeight="22.0" prefHeight="30.0" />
+                <RowConstraints maxHeight="23.0" minHeight="22.0" prefHeight="23.0" />
+                <RowConstraints maxHeight="23.0" minHeight="22.0" prefHeight="23.0" />
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="19.0" prefHeight="30.0" />
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="19.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="19.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="19.0" prefHeight="30.0" />
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="19.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="19.0" prefHeight="30.0" />
+            </rowConstraints>
+        </GridPane>
+    </children>
+</AnchorPane>

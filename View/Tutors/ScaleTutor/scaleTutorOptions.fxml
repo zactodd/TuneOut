@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="597.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ScaleTutorOptionController">
+  <children>
+    <GridPane alignment="TOP_CENTER" hgap="10.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="40.0" />
+      </padding>
+      <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" minHeight="25.0" prefHeight="50.0" prefWidth="515.0" style="-fx-font-weight: bold; -fx-font-size: 23;" text="Options" GridPane.columnIndex="1" />
+        <Label alignment="CENTER" prefHeight="21.0" prefWidth="171.0" text="Number of Questions" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="numQuestionsTextField" alignment="CENTER" prefHeight="26.0" prefWidth="321.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label fx:id="numQuestionsError" alignment="CENTER" prefHeight="21.0" prefWidth="370.0" text="This field must be a number from 1 to " textFill="RED" visible="false" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" />
+        <Label text="Number of Octaves:" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+        <ComboBox id="scaleOrder" fx:id="numOctaves" prefWidth="165.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+          <GridPane.margin>
+            <Insets left="100.0" />
+          </GridPane.margin></ComboBox>
+        <Label text="Play Order:" GridPane.rowIndex="4" />
+        <ComboBox fx:id="scaleOrder" prefWidth="165.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
+          <GridPane.margin>
+            <Insets left="100.0" />
+          </GridPane.margin></ComboBox>
+        <HBox fx:id="groupOfScale" minHeight="158.0" prefHeight="158.0" prefWidth="419.0" spacing="15.0" GridPane.columnSpan="3" GridPane.rowIndex="10">
+          <children>
+            <Accordion fx:id="advancedOptionAccordion" prefHeight="158.0" prefWidth="396.0">
+              <panes>
+                <TitledPane fx:id="advancedOption" animated="false" prefHeight="208.0" prefWidth="375.0" text="More Options:">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <ScrollPane id="advancedOptionsScrollPane" fx:id="advancedOptionScrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutX="0.0" layoutY="-1.0" pannable="true" prefHeight="131.0" prefWidth="370.0" visible="true">
+                          <content>
+                            <VBox fx:id="scaleAllCheckBoxes" prefHeight="126.0" prefWidth="348.0" spacing="20.0">
+                              <children>
+                                <Label fx:id="scaleLabel" text="Scales" underline="false" VBox.vgrow="ALWAYS" />
+                                <HBox fx:id="scaleCheckBoxes0To6" prefHeight="100.0" prefWidth="200.0" spacing="70.0" VBox.vgrow="ALWAYS">
+                                  <children>
+                                    <VBox id="scalesHBox" fx:id="scaleCheckBoxes0To3" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0" />
+                                    <VBox id="scalesHBox" fx:id="scaleCheckBoxes4To6" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0" />
+                                  </children>
+                                </HBox>
+                                <Label fx:id="majorModeLabel" text="Major Modes" />
+                                <HBox fx:id="majModeCheckBoxes0To6" prefHeight="100.0" prefWidth="200.0" spacing="70.0" VBox.vgrow="ALWAYS">
+                                  <children>
+                                    <VBox id="scalesHBox" fx:id="majModeCheckBoxes0To3" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0" />
+                                    <VBox id="scalesHBox" fx:id="majModeCheckBoxes4To6" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0" />
+                                  </children>
+                                  <VBox.margin>
+                                    <Insets />
+                                  </VBox.margin>
+                                </HBox>
+                                <Label fx:id="minorModeLabel" text="Minor Modes" />
+                                <HBox fx:id="minModeCheckBoxes0To7" prefHeight="100.0" prefWidth="200.0" spacing="70.0" VBox.vgrow="ALWAYS">
+                                  <children>
+                                    <VBox id="scalesHBox" fx:id="minModeCheckBoxes0To3" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0" />
+                                    <VBox id="scalesHBox" fx:id="minModeCheckBoxes4To7" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0" />
+                                  </children>
+                                  <VBox.margin>
+                                    <Insets />
+                                  </VBox.margin>
+                                </HBox>
+                              </children>
+                              <padding>
+                                <Insets bottom="10.0" left="5.0" top="10.0" />
+                              </padding>
+                              <opaqueInsets>
+                                <Insets />
+                              </opaqueInsets>
+                            </VBox>
+                          </content>
+                        </ScrollPane>
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+          </children>
+          <padding>
+            <Insets />
+          </padding>
+        </HBox>
+        <Label id="error" fx:id="scaleError" text="Please select at least two scales" textFill="RED" visible="false" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="13">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin></Label>
+        <Label text="Scale Type:" GridPane.rowIndex="6" />
+        <ComboBox fx:id="scaleNamesComboBox" onAction="#determineWhatToCheck" prefWidth="165.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="6">
+          <items>
+          </items>
+          <GridPane.margin>
+            <Insets left="100.0" />
+          </GridPane.margin>
+        </ComboBox>
+        <Button id="deselectAll" fx:id="deselectAllBtn" mnemonicParsing="false" onAction="#uncheckAllScale" text="Deselect All" visible="false" GridPane.columnSpan="2" GridPane.rowIndex="13">
+          <GridPane.margin>
+            <Insets />
+          </GridPane.margin></Button>
+        <Button fx:id="startBtn" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#startTutor" prefHeight="74.0" prefWidth="171.0" text="Start" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints maxWidth="150.0" minWidth="70.0" prefWidth="90.0" />
+        <ColumnConstraints maxWidth="223.0" minWidth="124.0" prefWidth="171.0" />
+        <ColumnConstraints maxWidth="150.0" minWidth="70.0" prefWidth="90.0" />
+      </columnConstraints>
+      <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="30.0" />
+      </padding>
+      <rowConstraints>
+        <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" valignment="CENTER" />
+        <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="22.0" />
+        <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="23.0" minHeight="22.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="16.0" prefHeight="16.0" />
+        <RowConstraints maxHeight="23.0" minHeight="22.0" prefHeight="23.0" />
+            <RowConstraints maxHeight="23.0" minHeight="22.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="23.0" minHeight="22.0" prefHeight="23.0" />
+        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="19.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="19.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="19.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="19.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="19.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="19.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="19.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="19.0" prefHeight="30.0" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="popUpAnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserNamePasswordRelatedController">
+  <children>
+    <GridPane alignment="TOP_CENTER" hgap="10.0" prefWidth="330.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Label minHeight="25.0" style="-fx-font-weight: bold;" text="Delete User" />
+        <Label text="User Name" GridPane.rowIndex="1" />
+        <Label text="Password" GridPane.rowIndex="2" />
+            <PasswordField fx:id="textPassword" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <children>
+              <Button alignment="TOP_CENTER" contentDisplay="RIGHT" defaultButton="true" mnemonicParsing="false" onAction="#clickDelete" text="Delete" textAlignment="CENTER" />
+               </children>
+            </HBox>
+            <Label id="error" fx:id="labelInvalid" prefHeight="34.0" prefWidth="287.0" textFill="RED" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+            <CheckBox fx:id="checkBoxPassword" mnemonicParsing="false" text="Show password" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="textFieldPassword" promptText="Enter Password" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="labelUsername" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints maxWidth="144.0" minWidth="100.0" prefWidth="100.0" />
+        <ColumnConstraints maxWidth="221.0" minWidth="177.0" prefWidth="180.0" />
+      </columnConstraints>
+      <padding>
+        <Insets bottom="-60.0" left="20.0" right="20.0" top="40.0" />
+      </padding>
+      <rowConstraints>
+        <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" valignment="CENTER" />
+        <RowConstraints maxHeight="22.0" prefHeight="22.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="22.0" />
+            <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="21.0" prefHeight="21.0" />
+            <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>

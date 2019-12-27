@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="userStatsVbox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserStatsController">
+    <children>
+          <MenuBar>
+              <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                      <items>
+                        <MenuItem mnemonicParsing="false" onAction="#importStats" text="Import" />
+                      </items>
+                  </Menu>
+              </menus>
+             <menus>
+                 <Menu mnemonicParsing="false" text="Table Data">
+                     <items>
+                         <MenuItem mnemonicParsing="false" onAction="#resetTableData" text="Reset" />
+                     </items>
+                 </Menu>
+             </menus>
+          </MenuBar>
+          <HBox alignment="CENTER" prefHeight="73.0" prefWidth="630.0" spacing="10.0">
+              <children>
+                  <VBox prefHeight="19.0" prefWidth="150.0">
+                      <children>
+                          <Label text="User:" />
+                          <ComboBox fx:id="userCombo" prefWidth="150.0" />
+                      </children>
+                  </VBox>
+                  <VBox>
+                      <children>
+                          <Label text="Tutor:" />
+                          <ComboBox fx:id="tutorCombo" prefWidth="150.0" />
+                      </children>
+                  </VBox>
+                  <VBox>
+                      <children>
+                          <Label text="From:" />
+                          <DatePicker fx:id="dateFrom" prefWidth="120.0" />
+                      </children>
+                  </VBox>
+                  <VBox>
+                      <children>
+                          <Label text="To:" />
+                          <DatePicker fx:id="dateTo" prefWidth="120.0" />
+                      </children>
+                  </VBox>
+              </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+          </HBox>
+      <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+        <tabs>
+          <Tab text="Table View">
+               <content>
+                      <TableView fx:id="tableUserstats" prefHeight="558.0" prefWidth="630.0">
+                          <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                          <columns>
+                              <TableColumn fx:id="userCol" prefWidth="75.0" text="User" />
+                              <TableColumn fx:id="dateCol" prefWidth="75.0" text="Date" />
+                              <TableColumn fx:id="tutorCol" prefWidth="75.0" text="Tutor" />
+                              <TableColumn fx:id="numQuestionsCol" prefWidth="75.0" text="Total Questions" />
+                              <TableColumn fx:id="correctCol" prefWidth="75.0" text="Correct" />
+                              <TableColumn fx:id="incorrectCol" prefWidth="75.0" text="Incorrect" />
+                              <TableColumn fx:id="precentCol" prefWidth="75.0" text="\% Correct" />
+                              <TableColumn fx:id="importedCol" prefWidth="75.0" text="Imported" visible="false" />
+                          </columns>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                      </TableView>
+               </content>
+          </Tab>
+          <Tab text="Graph View">
+            <content>
+                  <VBox fx:id="graphVBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                     <children>
+                        <HBox fx:id="comboH" alignment="CENTER_RIGHT" prefHeight="62.0" prefWidth="630.0">
+                           <children>
+                              <ComboBox fx:id="graphCombo" onAction="#updateGraph" prefHeight="31.0" prefWidth="243.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                        </HBox>
+                        <AnchorPane fx:id="graphPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+            </content>
+          </Tab>
+        </tabs>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </TabPane>
+    </children>
+
+</VBox>

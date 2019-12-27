@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SettingsController">
+  <children>
+    <GridPane alignment="TOP_CENTER" hgap="10.0" layoutY="-14.0" vgap="10.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-14.0">
+      <children>
+        <Label fx:id="title" minHeight="25.0" style="-fx-font-weight: bold;" text="User Preferences" />
+        <Label text="Theme" GridPane.rowIndex="1" />
+        <Label GridPane.rowIndex="4" />
+        <Button defaultButton="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#okBtn" text="Ok" GridPane.hgrow="ALWAYS" GridPane.rowIndex="12" GridPane.vgrow="ALWAYS" />
+        <Button cancelButton="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#cancel" text="Cancel" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="12" GridPane.vgrow="ALWAYS" />
+          <ComboBox fx:id="styleCombo" onAction="#previewStyleChange" prefHeight="25.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+          <Label text="Instrument" GridPane.rowIndex="2" />
+          <ComboBox fx:id="instrumentSelection" prefHeight="25.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+          <Button fx:id="testInstrument" mnemonicParsing="false" onAction="#testinstrument" text="Test" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+          <CheckBox fx:id="checkboxStats" mnemonicParsing="false" prefHeight="18.0" prefWidth="292.0" text="Automatically Save Tutor Stats" GridPane.columnSpan="2147483647" GridPane.rowIndex="8" />
+            <Label text="Transcript Text Size" GridPane.rowIndex="3" />
+            <ComboBox fx:id="textSizeCombo" onAction="#changeText" prefHeight="25.0" prefWidth="194.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Tempo" GridPane.rowIndex="4" />
+            <Label text="Unit Duration" GridPane.rowIndex="6" />
+            <ComboBox fx:id="comboUnitDuration" onAction="#changeUnitDuration" prefHeight="25.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="textTempo" prefHeight="25.0" prefWidth="129.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="labelInvalid" GridPane.rowIndex="7" />
+            <CheckBox fx:id="checkOverrideTempo" mnemonicParsing="false" text="Override Tempo" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+      </children>
+      <columnConstraints>
+        <ColumnConstraints maxWidth="210.0" minWidth="150.0" prefWidth="176.0" />
+        <ColumnConstraints maxWidth="210.0" minWidth="157.0" prefWidth="200.0" />
+      </columnConstraints>
+      <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="40.0" />
+      </padding>
+      <rowConstraints>
+        <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" valignment="CENTER" />
+        <RowConstraints maxHeight="22.0" prefHeight="22.0" />
+            <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="22.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="22.0" />
+        <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="21.0" prefHeight="21.0" />
+            <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="mainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OuterTemplateController">
+    <top>
+        <HBox alignment="CENTER_LEFT" BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar HBox.hgrow="ALWAYS">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#newProject" text="New Project">
+                                    <accelerator>
+                                        <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                    </accelerator>
+                                </MenuItem>
+                                <MenuItem id="menuOpen" mnemonicParsing="false" onAction="#openProject" text="Open">
+                                    <accelerator>
+                                        <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                    </accelerator>
+                                </MenuItem>
+                        <Menu mnemonicParsing="false" text="Save">
+                          <items>
+                                      <MenuItem mnemonicParsing="false" onAction="#saveProject" text="Save Project">
+                                          <accelerator>
+                                              <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                          </accelerator>
+                                      </MenuItem>
+                                      <SeparatorMenuItem mnemonicParsing="false" />
+                                      <MenuItem id="menuSave" mnemonicParsing="false" onAction="#saveTranscript" text="Save Transcript" />
+                                      <MenuItem id="menuSave" mnemonicParsing="false" onAction="#saveTranscriptCommands" text="Save Commands" />
+                          </items>
+                        </Menu>
+                                <MenuItem id="menuSaveAs" mnemonicParsing="false" onAction="#saveProjectAs" text="Save Project As...">
+                                    <accelerator>
+                                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                                    </accelerator>
+                                </MenuItem>
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem id="menuExport" mnemonicParsing="false" onAction="#importMelody" text="Import Melody" />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+
+                                <MenuItem mnemonicParsing="false" onAction="#quit" text="Quit">
+                                    <accelerator>
+                                        <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                    </accelerator>
+                                </MenuItem>
+                            </items>
+                        </Menu>
+
+                        <Menu mnemonicParsing="false" text="Tutor">
+   <items>
+                        <Menu mnemonicParsing="false" text="Chord">
+                          <items>
+                                     <MenuItem mnemonicParsing="false" onAction="#runChordTutor" text="Chord Tutor" />
+                                     <MenuItem mnemonicParsing="false" onAction="#runChordFunctionTutor" text="Chord Function Tutor" />
+                                     <MenuItem mnemonicParsing="false" onAction="#runChordSpellingTutor" text="Chord Spelling Tutor" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Note">
+                          <items>
+                                     <MenuItem mnemonicParsing="false" onAction="#runIntervalTutor" text="Interval Tutor" />
+                                     <MenuItem mnemonicParsing="false" onAction="#runPitchTutor" text="Pitch Tutor" />
+                          </items>
+                        </Menu>
+                               <MenuItem mnemonicParsing="false" onAction="#runKeySignatureTutor" text="Key Signature Tutor" />
+                               <MenuItem mnemonicParsing="false" onAction="#runMusicalTermTutor" text="Musical Term Tutor" />
+                        <Menu mnemonicParsing="false" text="Scale">
+                          <items>
+                                     <MenuItem mnemonicParsing="false" onAction="#runScaleTutor" text="Scale Tutor" />
+                                     <MenuItem mnemonicParsing="false" onAction="#runScaleModeTutor" text="Scale Mode Tutor" />
+                          </items>
+                        </Menu>
+   </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Settings">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#loadSettings" text="User Preferences">
+                                </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#reopenMainTab" text="Show Command and Transcript" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Play">
+                            <items>
+                                <MenuItem fx:id="runPiano" mnemonicParsing="false" onAction="#keyboard" text="Piano Style Keyboard" />
+                            </items>
+                            <items>
+                                <MenuItem fx:id="runDrumPad" mnemonicParsing="false" onAction="#drumPad" text="Drum Pad" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#openDslReferenceCard" text="DSL Reference Card" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <Button fx:id="keyboardInputButton" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" prefWidth="40" onAction="#toggleKeyboardInput" text="" />
+
+                <MenuButton fx:id="userButton" text="Default User">
+                    <items>
+                        <MenuItem fx:id="logged" mnemonicParsing="false" onAction="#handleLoggedButton" text="Log In" />
+                        <MenuItem mnemonicParsing="false" onAction="#addUser" text="Register User" />
+                        <Menu fx:id="userDeleteMenu" mnemonicParsing="false" text="Delete User">
+                        </Menu>
+                        <MenuItem mnemonicParsing="false" onAction="#openUserStats" text="User Stats" />
+                        <MenuItem mnemonicParsing="false" onAction="#viewUserProfile" text="View User Profile" />
+                    </items>
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </MenuButton>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <TabPane fx:id="mainTabPane" focusTraversable="false" tabClosingPolicy="SELECTED_TAB" BorderPane.alignment="CENTER">
+            <tabs>
+                <Tab fx:id="mainTab" closable="false" text="Commands and Transcript">
+                    <content>
+                        <BorderPane fx:id="mainTabBorderPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+                <Tab fx:id="exploreTab" closable="false" text="Learning">
+                    <content>
+                        <BorderPane fx:id="exploreTabBorderPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+                <Tab fx:id="composeTab" closable="false" text="Compose Melody">
+                    <content>
+                        <BorderPane fx:id="composeTabBorderPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+                <Tab fx:id="composePercussionTab" closable="false" text="Compose Percussion">
+                    <content>
+                        <BorderPane fx:id="composePercussionTabBorderPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>

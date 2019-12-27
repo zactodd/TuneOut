@@ -1,8 +1,4 @@
-// 
-// Decompiled by Procyon v0.5.36
-// 
-
-package seng302;
+package Main;
 
 import javafx.scene.input.KeyEvent;
 import javafx.scene.control.Button;

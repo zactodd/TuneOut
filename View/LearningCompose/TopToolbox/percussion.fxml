@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LearningCompose.TopToolbox.PercussionController">
+   <children>
+      <VBox>
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" spacing="10">
+               <children>
+                   <ToggleButton id="exploreBtn" fx:id="crossUpBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="60" textFill="WHITE">
+                       <toggleGroup>
+                           <ToggleGroup fx:id="percussionToggleGroup" />
+                       </toggleGroup>
+                       <graphic>
+                           <ImageView>
+                               <image>
+                                   <Image url="@../graphic/Percussion/CrossBtnUp.png" />
+                               </image>
+                           </ImageView>
+                       </graphic>
+                   </ToggleButton>
+                   <ToggleButton id="exploreBtn" fx:id="crotchetUpBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="60" selected="true" textFill="WHITE" toggleGroup="$percussionToggleGroup">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../graphic/Percussion/CrotchetBtn.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </ToggleButton>
+                   <ToggleButton id="exploreBtn" fx:id="triangleMiddleBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="60" textFill="WHITE" toggleGroup="$percussionToggleGroup">
+                       <graphic>
+                           <ImageView>
+                               <image>
+                                   <Image url="@../graphic/Percussion/TriangleMiddleBtn.png" />
+                               </image>
+                           </ImageView>
+                       </graphic>
+                       <font>
+                           <Font name="System Bold" size="20.0" />
+                       </font>
+                   </ToggleButton>
+                   <ToggleButton id="exploreBtn" fx:id="strikeBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="60" textFill="WHITE" toggleGroup="$percussionToggleGroup">
+                       <graphic>
+                           <ImageView>
+                               <image>
+                                   <Image url="@../graphic/Percussion/StrikeBtn.png" />
+                               </image>
+                           </ImageView>
+                       </graphic>
+                   </ToggleButton>
+                   <ToggleButton id="exploreBtn" fx:id="crotchetDownBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="60" textFill="WHITE" toggleGroup="$percussionToggleGroup">
+                       <graphic>
+                           <ImageView>
+                               <image>
+                                   <Image url="@../graphic/Percussion/CrotchetBtnDown.png" />
+                               </image>
+                           </ImageView>
+                       </graphic>
+                   </ToggleButton>
+                  <ToggleButton id="exploreBtn" fx:id="crossDownBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="60" textFill="WHITE" toggleGroup="$percussionToggleGroup">
+                     <graphic>
+                         <ImageView>
+                           <image>
+                               <Image url="@../graphic/Percussion/CrossBtn.png" />
+                           </image>
+                       </ImageView>
+                     </graphic>
+                   </ToggleButton>
+                   <ToggleButton id="exploreBtn" fx:id="diamondBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="60" textFill="WHITE" toggleGroup="$percussionToggleGroup">
+                       <graphic>
+                           <ImageView>
+                               <image>
+                                   <Image url="@../graphic/Percussion/DiamondBtn.png" />
+                               </image>
+                           </ImageView>
+                       </graphic>
+                   </ToggleButton>
+                   <ToggleButton id="exploreBtn" fx:id="triangleSideBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="60" textFill="WHITE" toggleGroup="$percussionToggleGroup">
+                       <graphic>
+                           <ImageView>
+                               <image>
+                                   <Image url="@../graphic/Percussion/TriangleSideBtn.png" />
+                               </image>
+                           </ImageView>
+                       </graphic>
+                   </ToggleButton>
+                   <ToggleButton id="exploreBtn" fx:id="restBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="45" prefWidth="60" textFill="WHITE" toggleGroup="$percussionToggleGroup">
+                       <graphic>
+                           <ImageView>
+                               <image>
+                                   <Image url="@../graphic/Rests/Rest crotchetBtn.png" />
+                               </image>
+                           </ImageView>
+                       </graphic>
+                   </ToggleButton>
+               </children>
+            </HBox>
+            <HBox fx:id="secondRowToggles" alignment="CENTER" prefHeight="60.0" spacing="10" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LearningCompose.TopToolbox.SignatureController">
+   <children>
+   <HBox alignment="CENTER" spacing="3" prefHeight="60">
+   <children>
+      <VBox fx:id="header" alignment="CENTER" prefHeight="120.0" HBox.hgrow="ALWAYS" spacing="10">
+         <children>
+            <HBox fx:id="keysAboveHBox" alignment="CENTER" spacing="10">
+               <Button id="arrowBtn" fx:id="leftBtnMaj" prefHeight="28" minHeight="28" maxHeight="28" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#moveDownMaj">
+                  <graphic>
+                     <ImageView>
+                        <image>
+                           <Image url="@../graphic/ArrowLeftSmall.png" />
+                        </image>
+                     </ImageView>
+                  </graphic>
+               </Button>
+               <Button id="arrowBtn" fx:id="rightBtnMaj" prefHeight="28" minHeight="28" maxHeight="28" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#moveUpMaj">
+                  <graphic>
+                     <ImageView>
+                        <image>
+                           <Image url="@../graphic/ArrowRightSmall.png" />
+                        </image>
+                     </ImageView>
+                  </graphic>
+               </Button>
+            </HBox>
+            <HBox fx:id="keysBelowHBox" alignment="CENTER" spacing="10">
+               <Button id="arrowBtn" fx:id="leftBtnMin" prefHeight="28" minHeight="28" maxHeight="28" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#moveDownMin">
+                  <graphic>
+                     <ImageView>
+                        <image>
+                           <Image url="@../graphic/ArrowLeftSmall.png" />
+                        </image>
+                     </ImageView>
+                  </graphic>
+               </Button>
+               <Button id="arrowBtn" fx:id="rightBtnMin" prefHeight="28" minHeight="28" maxHeight="28" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#moveUpMin">
+                  <graphic>
+                     <ImageView>
+                        <image>
+                           <Image url="@../graphic/ArrowRightSmall.png" />
+                        </image>
+                     </ImageView>
+                  </graphic>
+               </Button>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   </HBox>
+   </children>
+</AnchorPane>

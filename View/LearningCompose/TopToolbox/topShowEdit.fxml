@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LearningCompose.TopToolbox.TopShowEditController">
+   <children>
+      <MenuButton id="menuExploreBtn" fx:id="melodyMenuButton" layoutX="10.0" layoutY="10.0" onMouseClicked="#updateMenus" text="Default Melody">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#newMelody" text="New Melody" />
+            <Menu fx:id="openMelodyMenu" mnemonicParsing="false" text="Open Melody" />
+            <MenuItem mnemonicParsing="false" onAction="#saveMelody" text="Save Melody" />
+            <Menu fx:id="deleteMelodyMenu" mnemonicParsing="false" text="Delete Melody" />
+         </items>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </MenuButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.ToggleGroup?>
+<AnchorPane fx:id="toolbox" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LearningCompose.Toolbox.ToolboxLearningController">
+   <children>
+       <VBox spacing="10.0" GridPane.rowIndex="1">
+           <children>
+               <ToggleButton id="exploreBtn" fx:id="noteBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#inputNote" prefWidth="100" style="-fx-graphic: url('View/LearningCompose/graphic/CrotchetBtn.png');" text="Note">
+                 <toggleGroup>
+                   <ToggleGroup fx:id="toggleToolbox" />
+                 </toggleGroup>
+               </ToggleButton>
+               <!--<ToggleButton id="exploreBtn" fx:id="restBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#inputRest" prefWidth="100" style="-fx-graphic: url('View/LearningCompose/graphic/RestCrotchetBtn.png');" text="Rest" toggleGroup="$toggleToolbox" />-->
+               <ToggleButton id="exploreBtn" fx:id="intervalBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#inputInterval" prefWidth="100" style="-fx-graphic: url('View/LearningCompose/graphic/IntervalBtn.png');" text="Interval" toggleGroup="$toggleToolbox" />
+               <ToggleButton id="exploreBtn" fx:id="scaleBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#inputScale" prefWidth="100" style="-fx-graphic: url('View/LearningCompose/graphic/ScaleBtn.png');" text="Scale" toggleGroup="$toggleToolbox" />
+               <ToggleButton id="exploreBtn" fx:id="chordBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#inputChord" prefWidth="100" style="-fx-graphic: url('View/LearningCompose/graphic/ChordBtn.png');" text="Chord" toggleGroup="$toggleToolbox" visible="true" />
+               <ToggleButton id="exploreBtn" fx:id="keySignatureBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#inputKeySignature" prefWidth="100" style="-fx-graphic: url('View/LearningCompose/graphic/KeySigBtn.png');" text="Key Signature" toggleGroup="$toggleToolbox" visible = "true"/>
+           </children>
+           <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+           </padding>
+       </VBox>
+   </children>
+</AnchorPane>

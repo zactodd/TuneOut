@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LearningCompose.TopToolbox.ScaleController">
+   <children>
+      <HBox  alignment="CENTER" prefHeight="60.0" spacing="3" >
+         <children>
+                  <ToggleButton id="exploreBtn" fx:id="majorScaleBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="25.0" minWidth="75" text="Major" selected="true">
+                  <toggleGroup>
+                     <ToggleGroup fx:id="scaleToggleGroup" />
+                  </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton id="exploreBtn" fx:id="minorScaleBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="25.0" minWidth="75" text="Minor"  toggleGroup="$scaleToggleGroup"/>
+                  <ToggleButton id="exploreBtn" fx:id="pentatonicMajorScaleBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="25.0" minWidth="75" text="Major Pentatonic" toggleGroup="$scaleToggleGroup"/>
+                  <ToggleButton id="exploreBtn" fx:id="pentatonicMinorScaleBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="25.0" minWidth="75" text="Minor Pentatonic"  toggleGroup="$scaleToggleGroup"/>
+                  <ToggleButton id="exploreBtn" fx:id="bluesScaleBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="25.0" minWidth="75" text="Blues"  toggleGroup="$scaleToggleGroup"/>
+                  <ToggleButton id="exploreBtn" fx:id="melodicMinorScaleBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="25.0" minWidth="75" text="Melodic Minor"  toggleGroup="$scaleToggleGroup"/>
+                  <ToggleButton id="exploreBtn" fx:id="harmonicMinorScaleBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="25.0" minWidth="75" text="Harmonic Minor" toggleGroup="$scaleToggleGroup"/>
+               </children>
+      </HBox>
+   </children>
+</AnchorPane>

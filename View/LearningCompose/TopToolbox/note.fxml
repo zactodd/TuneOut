@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="noteAnchorPane" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LearningCompose.TopToolbox.NoteController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="60.0" spacing="20">
+         <children>
+            <!--<Label id="exploreLabel" minWidth="100.0" text="Note :" alignment="CENTER_RIGHT"/>-->
+            <HBox alignment="CENTER" spacing="3.0">
+               <children>
+                  <Button id="arrowBtn" fx:id="leftBtn" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#moveToLowerOctave">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../graphic/ArrowLeft.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ToggleButton fx:id="c" minWidth="60.0" mnemonicParsing="false" onAction="#placeNote" text="C4">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="toggleGroupNotes" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton fx:id="d" minWidth="60.0" mnemonicParsing="false" onAction="#placeNote" text="D4" toggleGroup="$toggleGroupNotes">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="e" minWidth="60.0" mnemonicParsing="false" onAction="#placeNote" text="E4" toggleGroup="$toggleGroupNotes">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="f" minWidth="60.0" mnemonicParsing="false" onAction="#placeNote" text="F4" toggleGroup="$toggleGroupNotes">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="g" minWidth="60.0" mnemonicParsing="false" onAction="#placeNote" text="G4" toggleGroup="$toggleGroupNotes">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="a" minWidth="60.0" mnemonicParsing="false" onAction="#placeNote" text="A4" toggleGroup="$toggleGroupNotes">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="b" minWidth="60.0" mnemonicParsing="false" onAction="#placeNote" text="B4" toggleGroup="$toggleGroupNotes">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </ToggleButton>
+                  <Button id="arrowBtn" fx:id="rightBtn" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#moveToHigherOctave">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../graphic/ArrowRight.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

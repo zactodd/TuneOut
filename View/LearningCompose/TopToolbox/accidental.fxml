@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LearningCompose.TopToolbox.AccidentalController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="60.0" spacing="3">
+               <children>
+                  <ToggleButton id="exploreBtn" fx:id="sharpBtn" minWidth="60" mnemonicParsing="false" onAction="#selectItem" text="♯">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="18.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="accidentalToggleGroup" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton id="exploreBtn" fx:id="flatBtn" minWidth="60" mnemonicParsing="false" onAction="#selectItem" text="♭" toggleGroup="$accidentalToggleGroup">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="18.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton id="exploreBtn" fx:id="naturalBtn" mnemonicParsing="false" onAction="#selectItem" minWidth="60" text="♮" textFill="#461c1c" toggleGroup="$accidentalToggleGroup" visible="false">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="18.0" />
+                     </font>
+                  </ToggleButton>
+               </children>
+            </HBox>
+   </children>
+</AnchorPane>

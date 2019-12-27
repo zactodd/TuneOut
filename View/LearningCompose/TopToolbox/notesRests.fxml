@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LearningCompose.TopToolbox.NoteRestDurationController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="60.0" spacing="3">
+         <children>
+            <ToggleButton id="exploreBtn" fx:id="semiQuaverBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="45" selected="true" textFill="WHITE">
+            <toggleGroup>
+               <ToggleGroup fx:id="durationToggleGroup" />
+            </toggleGroup>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../graphic/Notes/SemiQuaverBtn.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+                <font><Font name="System Bold" size="20.0" /></font> 
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton id="exploreBtn" fx:id="quaverBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="45" toggleGroup="$durationToggleGroup" textFill="WHITE">
+               <graphic>
+                   <ImageView>
+                     <image>
+                         <Image url="@../graphic/Notes/QuaverBtn.png" />
+                     </image>
+                 </ImageView>
+               </graphic>
+                <font><Font name="System Bold" size="20.0" /></font> 
+             </ToggleButton>
+             <ToggleButton id="exploreBtn" fx:id="crotchetBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="45" toggleGroup="$durationToggleGroup" textFill="WHITE">
+                 <graphic>
+                     <ImageView>
+                         <image>
+                             <Image url="@../graphic/Notes/CrotchetBtn.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+                 <font><Font name="System Bold" size="20.0" /></font> 
+             </ToggleButton>
+             <ToggleButton id="exploreBtn" fx:id="minimBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="45" toggleGroup="$durationToggleGroup" textFill="WHITE">
+                 <graphic>
+                     <ImageView>
+                         <image>
+                             <Image url="@../graphic/Notes/MinimBtn.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+                 <font><Font name="System Bold" size="20.0" /></font> 
+             </ToggleButton>
+             <ToggleButton id="exploreBtn" fx:id="semibreveBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="45" toggleGroup="$durationToggleGroup" textFill="WHITE">
+                 <graphic>
+                     <ImageView>
+                         <image>
+                             <Image url="@../graphic/Notes/SemibreveBtn.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+                 <font><Font name="System Bold" size="20.0" /></font> 
+             </ToggleButton>
+             <ToggleButton id="exploreBtn" fx:id="breveBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="45" toggleGroup="$durationToggleGroup" textFill="WHITE">
+                 <graphic>
+                     <ImageView>
+                         <image>
+                             <Image url="@../graphic/Notes/BreveBtn.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+                 <font><Font name="System Bold" size="20.0" /></font> 
+             </ToggleButton>
+             <Separator orientation="VERTICAL" />
+
+             <ToggleButton id="exploreBtn" fx:id="semiQuaverRestBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="45" toggleGroup="$durationToggleGroup" textFill="WHITE">
+                 <graphic>
+                     <ImageView>
+                         <image>
+                             <Image url="@../graphic/Rests/Rest semiquaverBtn.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+                 <font><Font name="System Bold" size="20.0" /></font> 
+             </ToggleButton>
+             <ToggleButton id="exploreBtn" fx:id="quaverRestBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="45" toggleGroup="$durationToggleGroup" textFill="WHITE">
+                 <graphic>
+                     <ImageView>
+                         <image>
+                             <Image url="@../graphic/Rests/Rest quaverBtn.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+                 <font><Font name="System Bold" size="20.0" /></font> 
+             </ToggleButton>
+             <ToggleButton id="exploreBtn" fx:id="crotchetRestBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="45" toggleGroup="$durationToggleGroup" textFill="WHITE">
+                 <graphic>
+                     <ImageView>
+                         <image>
+                             <Image url="@../graphic/Rests/Rest crotchetBtn.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+                 <font><Font name="System Bold" size="20.0" /></font> 
+             </ToggleButton>
+             <ToggleButton id="exploreBtn" fx:id="minimRestBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="45" toggleGroup="$durationToggleGroup" textFill="WHITE">
+                 <graphic>
+                     <ImageView>
+                         <image>
+                             <Image url="@../graphic/Rests/Rest minimBtn.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+                 <font><Font name="System Bold" size="20.0" /></font> 
+             </ToggleButton>
+             <ToggleButton id="exploreBtn" fx:id="semibreveRestBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="45" toggleGroup="$durationToggleGroup" textFill="WHITE">
+                 <graphic>
+                     <ImageView>
+                         <image>
+                             <Image url="@../graphic/Rests/Rest semibreveBtn.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+                 <font><Font name="System Bold" size="20.0" /></font> 
+             </ToggleButton>
+             <ToggleButton id="exploreBtn" fx:id="breveRestBtn" mnemonicParsing="false" onAction="#pressButton" prefHeight="40" prefWidth="45" toggleGroup="$durationToggleGroup" textFill="WHITE">
+                 <graphic>
+                     <ImageView>
+                         <image>
+                             <Image url="@../graphic/Rests/Rest breveBtn.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+                 <font><Font name="System Bold" size="20.0" /></font> 
+             </ToggleButton>
+
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

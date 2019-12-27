@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LearningCompose.TopToolbox.ChordInversionController">
+   <children>
+      <HBox alignment="CENTER" layoutX="-1.0" layoutY="2.0" spacing="20">
+         <children>
+            <HBox fx:id="inversionDynamicHbox" alignment="CENTER" spacing="3.0">
+               <children>
+                  <ToggleButton id="exploreBtn" fx:id="firstInversionBtn" minWidth="55.0" mnemonicParsing="false" onAction="#selectInversion" prefHeight="25.0" text="1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="chordInversionToggleGroup" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton id="exploreBtn" fx:id="secondInversionBtn" minWidth="55.0" mnemonicParsing="false" onAction="#selectInversion" prefHeight="25.0" text="2" toggleGroup="$chordInversionToggleGroup" />
+                  <ToggleButton id="exploreBtn" fx:id="thirdInversionBtn" disable="true" minWidth="55.0" mnemonicParsing="false" onAction="#selectInversion" prefHeight="25.0" text="3" toggleGroup="$chordInversionToggleGroup" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

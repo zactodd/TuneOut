@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LearningCompose.TopToolbox.ChordArrangementController">
+   <children>
+      <HBox alignment="CENTER" spacing="20">
+         <children>
+            <HBox alignment="CENTER" spacing="3.0">
+               <children>
+                  <ToggleButton id="exploreBtn" fx:id="chordSimultaneousBtn" minWidth="75" mnemonicParsing="false" onAction="#pressButton" prefHeight="25.0" selected="true" text="Simultaneous">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="chordArrangementToggleGroup" />
+                     </toggleGroup>
+                  </ToggleButton>
+
+
+                  <ToggleButton id="exploreBtn" fx:id="chordArpeggioBtn" minWidth="75" mnemonicParsing="false" onAction="#pressButton" prefHeight="25.0" text="Arpeggio" toggleGroup="$chordArrangementToggleGroup" />
+
+                  <!--<VBox minWidth="100.0">-->
+                  <!--<children>-->
+                  <!--<ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="189.0" text="Majors" />-->
+                  <!--<ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="190.0" text="Major" visible="false" />-->
+                  <!--<ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" text="Major Pentatonic" visible="false" />-->
+                  <!--</children>-->
+                  <!--</VBox>-->
+                  <!--<VBox minWidth="100.0" HBox.hgrow="ALWAYS">-->
+                  <!--<children>-->
+                  <!--<ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="168.0" text="Minors" VBox.vgrow="ALWAYS" />-->
+                  <!--<ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="171.0" text="Natural Minor" visible="false" />-->
+                  <!--<ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="169.0" text="Minor Pentatonic" visible="false" />-->
+                  <!--<ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="172.0" text="Natural Minor" visible="false" />-->
+                  <!--<ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="Natural Minor" visible="false" />-->
+                  <!--</children>-->
+                  <!--</VBox>-->
+                  <!--<VBox minWidth="100.0" HBox.hgrow="ALWAYS">-->
+                  <!--<children>-->
+                  <!--<ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Others" />-->
+                  <!--<ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Blues" visible="false" />-->
+                  <!--</children>-->
+                  <!--</VBox>-->
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

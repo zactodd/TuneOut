@@ -1,0 +1,19 @@
+#buttonL {
+    -fx-background-image: url('../graphic/leftTriangle.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: #7b7b7b;
+}
+
+#buttonL:hover {
+    -fx-background-image: url('../graphic/leftTriangleClick.jpg');
+}
+
+#buttonR {
+    -fx-background-image: url('../graphic/rightTriangle.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: #7b7b7b;
+}
+
+#buttonR:hover {
+    -fx-background-image: url('../graphic/rightTriangleClick.jpg');
+}

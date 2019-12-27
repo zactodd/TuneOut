@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="fullPianoKeyboard" minWidth="-Infinity" prefHeight="114.0" prefWidth="962.0" style="-fx-background-color: #7b7b7b;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Keyboard.FullPianoKeyboardController">
+<children>
+    <ImageView fitWidth="912.0" layoutX="25.0" layoutY="3.0" preserveRatio="true" smooth="false">
+        <image>
+            <Image url="@graphic/88keyboard.jpg" />
+        </image>
+    </ImageView>
+    
+	<Rectangle id="c0_" fx:id="C0C1Range" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="109.0" layoutX="25.0" layoutY="3.0" opacity="0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="245.0" />
+    <Rectangle id="c1_" fx:id="C1C2Range" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="109.0" layoutX="59.0" layoutY="3.0" opacity="0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="245.0" />
+    <Rectangle id="c2_" fx:id="C2C3Range" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="109.0" layoutX="183.0" layoutY="3.0" opacity="0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="245.0" />
+    <Rectangle id="c3_" fx:id="C3C4Range" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="109.0" layoutX="306.0" layoutY="3.0" opacity="0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="245.0" />
+    <Rectangle id="c4_" fx:id="C4C5Range" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="109.0" layoutX="428.0" layoutY="3.0" opacity="0.4" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="245.0" />
+    <Rectangle id="c5_" fx:id="C5C6Range" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="109.0" layoutX="551.0" layoutY="3.0" opacity="0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="245.0" />
+    <Rectangle id="c6_" fx:id="C6C7Range" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="109.0" layoutX="673.0" layoutY="3.0" opacity="0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="247.0" />
+    <Rectangle id="c7_" fx:id="C7C8Range" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="109.0" layoutX="692.0" layoutY="3.0" opacity="0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="245.0" />
+    <Button id="buttonL" fx:id="leftBtn" layoutX="2.0" layoutY="3.0" mnemonicParsing="false" onAction="#clickLeftBtn" prefHeight="109.0" prefWidth="22.0" stylesheets="@CSS/fullPianoKeyboard.css" />
+    <Button id="buttonR" fx:id="rightBtn" layoutX="938.0" layoutY="3.0" mnemonicParsing="false" onAction="#clickRightBtn" prefHeight="109.0" prefWidth="22.0" stylesheets="@CSS/fullPianoKeyboard.css" />
+
+	<ImageView fx:id="A0" fitHeight="108.0" fitWidth="17.0" layoutX="26.0" layoutY="3.0"><image><Image url="@graphic/red_Aleft.png" /></image></ImageView>
+	<ImageView fx:id="B0" fitHeight="108.0" fitWidth="17.0" layoutX="43.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+	
+	<ImageView fx:id="C1" fitHeight="108.0" fitWidth="17.0" layoutX="60.0" layoutY="3.0"><image><Image url="@graphic/red_CF.png" /></image></ImageView>
+    <ImageView fx:id="D1" fitHeight="108.0" fitWidth="17.0" layoutX="77.0" layoutY="3.0"><image><Image url="@graphic/red_D.png" /></image></ImageView>
+	<ImageView fx:id="E1" fitHeight="108.0" fitWidth="17.0" layoutX="95.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+    <ImageView fx:id="F1" fitHeight="108.0" fitWidth="17.0" layoutX="113.0" layoutY="3.0"><image><Image url="@graphic/red_CF.png" /></image></ImageView>
+	<ImageView fx:id="G1" fitHeight="108.0" fitWidth="17.0" layoutX="130.0" layoutY="3.0"><image><Image url="@graphic/red_G.png" /></image></ImageView>
+	<ImageView fx:id="A1" fitHeight="108.0" fitWidth="17.0" layoutX="147.0" layoutY="3.0"><image><Image url="@graphic/red_A.png" /></image></ImageView>
+	<ImageView fx:id="B1" fitHeight="108.0" fitWidth="17.0" layoutX="165.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+	
+	<ImageView fx:id="C2" fitHeight="108.0" fitWidth="17.0" layoutX="183.0" layoutY="3.0"><image><Image url="@graphic/red_CF.png" /></image></ImageView>
+	<ImageView fx:id="D2" fitHeight="108.0" fitWidth="17.0" layoutX="200.0" layoutY="3.0"><image><Image url="@graphic/red_D.png" /></image></ImageView>
+	<ImageView fx:id="E2" fitHeight="108.0" fitWidth="17.0" layoutX="218.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+    <ImageView fx:id="F2" fitHeight="108.0" fitWidth="17.0" layoutX="235.0" layoutY="3.0"><image><Image url="@graphic/red_CF.png" /></image></ImageView>
+	<ImageView fx:id="G2" fitHeight="108.0" fitWidth="17.0" layoutX="253.0" layoutY="3.0"><image><Image url="@graphic/red_G.png" /></image></ImageView>
+	<ImageView fx:id="A2" fitHeight="108.0" fitWidth="17.0" layoutX="271.0" layoutY="3.0"><image><Image url="@graphic/red_A.png" /></image></ImageView>
+	<ImageView fx:id="B2" fitHeight="108.0" fitWidth="17.0" layoutX="288.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+	
+	<ImageView fx:id="C3" fitHeight="108.0" fitWidth="17.0" layoutX="306.0" layoutY="3.0"><image><Image url="@graphic/red_CF.png" /></image></ImageView>
+	<ImageView fx:id="D3" fitHeight="108.0" fitWidth="17.0" layoutX="323.0" layoutY="3.0"><image><Image url="@graphic/red_D.png" /></image></ImageView>
+	<ImageView fx:id="E3" fitHeight="108.0" fitWidth="17.0" layoutX="341.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+    <ImageView fx:id="F3" fitHeight="108.0" fitWidth="17.0" layoutX="358.0" layoutY="3.0"><image><Image url="@graphic/red_CF.png" /></image></ImageView>
+	<ImageView fx:id="G3" fitHeight="108.0" fitWidth="17.0" layoutX="376.0" layoutY="3.0"><image><Image url="@graphic/red_G.png" /></image></ImageView>
+	<ImageView fx:id="A3" fitHeight="108.0" fitWidth="17.0" layoutX="393.0" layoutY="3.0"><image><Image url="@graphic/red_A.png" /></image></ImageView>
+	<ImageView fx:id="B3" fitHeight="108.0" fitWidth="17.0" layoutX="411.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+	
+	<ImageView fx:id="C4" fitHeight="108.0" fitWidth="17.0" layoutX="428.0" layoutY="3.0"><image><Image url="@graphic/red_CF.png" /></image></ImageView>
+	<ImageView fx:id="D4" fitHeight="108.0" fitWidth="17.0" layoutX="446.0" layoutY="3.0"><image><Image url="@graphic/red_D.png" /></image></ImageView>
+	<ImageView fx:id="E4" fitHeight="108.0" fitWidth="17.0" layoutX="463.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+    <ImageView fx:id="F4" fitHeight="108.0" fitWidth="17.0" layoutX="480.0" layoutY="3.0"><image><Image url="@graphic/red_CF.png" /></image></ImageView>
+	<ImageView fx:id="G4" fitHeight="108.0" fitWidth="17.0" layoutX="498.0" layoutY="3.0"><image><Image url="@graphic/red_G.png" /></image></ImageView>
+	<ImageView fx:id="A4" fitHeight="108.0" fitWidth="17.0" layoutX="516.0" layoutY="3.0"><image><Image url="@graphic/red_A.png" /></image></ImageView>
+	<ImageView fx:id="B4" fitHeight="108.0" fitWidth="17.0" layoutX="533.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+	
+	<ImageView fx:id="C5" fitHeight="108.0" fitWidth="17.0" layoutX="551.0" layoutY="3.0"><image><Image url="@graphic/red_CF.png" /></image></ImageView>
+	<ImageView fx:id="D5" fitHeight="108.0" fitWidth="17.0" layoutX="569.0" layoutY="3.0"><image><Image url="@graphic/red_D.png" /></image></ImageView>
+	<ImageView fx:id="E5" fitHeight="108.0" fitWidth="17.0" layoutX="586.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+    <ImageView fx:id="F5" fitHeight="108.0" fitWidth="17.0" layoutX="603.0" layoutY="3.0"><image><Image url="@graphic/red_CF.png" /></image></ImageView>
+	<ImageView fx:id="G5" fitHeight="108.0" fitWidth="17.0" layoutX="621.0" layoutY="3.0"><image><Image url="@graphic/red_G.png" /></image></ImageView>
+	<ImageView fx:id="A5" fitHeight="108.0" fitWidth="17.0" layoutX="638.0" layoutY="3.0"><image><Image url="@graphic/red_A.png" /></image></ImageView>
+	<ImageView fx:id="B5" fitHeight="108.0" fitWidth="17.0" layoutX="656.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+	
+	<ImageView fx:id="C6" fitHeight="108.0" fitWidth="17.0" layoutX="674.0" layoutY="3.0"><image><Image url="@graphic/red_CF.png" /></image></ImageView>
+	<ImageView fx:id="D6" fitHeight="108.0" fitWidth="17.0" layoutX="691.0" layoutY="3.0"><image><Image url="@graphic/red_D.png" /></image></ImageView>
+	<ImageView fx:id="E6" fitHeight="108.0" fitWidth="17.0" layoutX="709.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+    <ImageView fx:id="F6" fitHeight="108.0" fitWidth="17.0" layoutX="726.0" layoutY="3.0"><image><Image url="@graphic/red_CF.png" /></image></ImageView>
+	<ImageView fx:id="G6" fitHeight="108.0" fitWidth="17.0" layoutX="744.0" layoutY="3.0"><image><Image url="@graphic/red_G.png" /></image></ImageView>
+	<ImageView fx:id="A6" fitHeight="108.0" fitWidth="17.0" layoutX="762.0" layoutY="3.0"><image><Image url="@graphic/red_A.png" /></image></ImageView>
+	<ImageView fx:id="B6" fitHeight="108.0" fitWidth="17.0" layoutX="779.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+	
+	<ImageView fx:id="C7" fitHeight="108.0" fitWidth="17.0" layoutX="797.0" layoutY="3.0"><image><Image url="@graphic/red_CF.png" /></image></ImageView>
+	<ImageView fx:id="D7" fitHeight="108.0" fitWidth="17.0" layoutX="814.0" layoutY="3.0"><image><Image url="@graphic/red_D.png" /></image></ImageView>
+	<ImageView fx:id="E7" fitHeight="108.0" fitWidth="17.0" layoutX="832.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+    <ImageView fx:id="F7" fitHeight="108.0" fitWidth="17.0" layoutX="849.0" layoutY="3.0"><image><Image url="@graphic/red_CF.png" /></image></ImageView>
+	<ImageView fx:id="G7" fitHeight="108.0" fitWidth="17.0" layoutX="867.0" layoutY="3.0"><image><Image url="@graphic/red_G.png" /></image></ImageView>
+	<ImageView fx:id="A7" fitHeight="108.0" fitWidth="17.0" layoutX="884.0" layoutY="3.0"><image><Image url="@graphic/red_A.png" /></image></ImageView>
+	<ImageView fx:id="B7" fitHeight="108.0" fitWidth="17.0" layoutX="902.0" layoutY="3.0"><image><Image url="@graphic/red_EB.png" /></image></ImageView>
+	
+	<ImageView fx:id="C8" fitHeight="108.0" fitWidth="17.0" layoutX="919.0" layoutY="3.0"><image><Image url="@graphic/red_Cright.png" /></image></ImageView>
+	
+	<ImageView fx:id="A0S" fitHeight="71.0" fitWidth="11.0" layoutX="40.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	
+	<ImageView fx:id="C1S" fitHeight="71.0" fitWidth="11.0" layoutX="69.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="D1S" fitHeight="71.0" fitWidth="11.0" layoutX="92.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="F1S" fitHeight="71.0" fitWidth="11.0" layoutX="122.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="G1S" fitHeight="71.0" fitWidth="11.0" layoutX="142.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="A1S" fitHeight="71.0" fitWidth="11.0" layoutX="162.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	
+	<ImageView fx:id="C2S" fitHeight="71.0" fitWidth="11.0" layoutX="192.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="D2S" fitHeight="71.0" fitWidth="11.0" layoutX="215.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="F2S" fitHeight="71.0" fitWidth="11.0" layoutX="245.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="G2S" fitHeight="71.0" fitWidth="11.0" layoutX="265.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="A2S" fitHeight="71.0" fitWidth="11.0" layoutX="285.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	
+	<ImageView fx:id="C3S" fitHeight="71.0" fitWidth="11.0" layoutX="315.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="D3S" fitHeight="71.0" fitWidth="11.0" layoutX="338.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="F3S" fitHeight="71.0" fitWidth="11.0" layoutX="368.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="G3S" fitHeight="71.0" fitWidth="11.0" layoutX="388.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="A3S" fitHeight="71.0" fitWidth="11.0" layoutX="408.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	
+	<ImageView fx:id="C4S" fitHeight="71.0" fitWidth="11.0" layoutX="438.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="D4S" fitHeight="71.0" fitWidth="11.0" layoutX="460.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="F4S" fitHeight="71.0" fitWidth="11.0" layoutX="490.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="G4S" fitHeight="71.0" fitWidth="11.0" layoutX="510.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="A4S" fitHeight="71.0" fitWidth="11.0" layoutX="530.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	
+	<ImageView fx:id="C5S" fitHeight="71.0" fitWidth="11.0" layoutX="561.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="D5S" fitHeight="71.0" fitWidth="11.0" layoutX="583.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="F5S" fitHeight="71.0" fitWidth="11.0" layoutX="613.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="G5S" fitHeight="71.0" fitWidth="11.0" layoutX="633.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="A5S" fitHeight="71.0" fitWidth="11.0" layoutX="653.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	
+	<ImageView fx:id="C6S" fitHeight="71.0" fitWidth="11.0" layoutX="684.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="D6S" fitHeight="71.0" fitWidth="11.0" layoutX="706.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="F6S" fitHeight="71.0" fitWidth="11.0" layoutX="736.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="G6S" fitHeight="71.0" fitWidth="11.0" layoutX="756.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="A6S" fitHeight="71.0" fitWidth="11.0" layoutX="776.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	
+	<ImageView fx:id="C7S" fitHeight="71.0" fitWidth="11.0" layoutX="806.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="D7S" fitHeight="71.0" fitWidth="11.0" layoutX="829.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="F7S" fitHeight="71.0" fitWidth="11.0" layoutX="859.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="G7S" fitHeight="71.0" fitWidth="11.0" layoutX="879.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+	<ImageView fx:id="A7S" fitHeight="71.0" fitWidth="11.0" layoutX="899.0" layoutY="3.0"><image><Image url="@graphic/red_Black.jpg" /></image></ImageView>
+		
+	
+	</children>
+</AnchorPane>

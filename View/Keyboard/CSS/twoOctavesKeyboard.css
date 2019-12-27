@@ -1,0 +1,16 @@
+Button {
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+
+Text {
+	-fx-font-size: 13px;
+	-fx-font-family: 'System';
+	-fx-font-weight: bold;
+}
+.imageVisib {
+	visibility: false;
+}
+Rectangle {
+	-fx-opacity: 0.0;
+}

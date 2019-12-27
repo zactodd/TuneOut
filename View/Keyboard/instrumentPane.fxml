@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="instrumentPane" minWidth="-Infinity" prefHeight="576.0" prefWidth="962.0" style="-fx-background-color: #7b7b7b;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Keyboard.InstrumentPaneController">
+   <rowConstraints>
+      <RowConstraints prefHeight="47.0" />
+      <RowConstraints prefHeight="114.0" />
+      <RowConstraints prefHeight="415.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <children>
+      <AnchorPane minWidth="-Infinity" prefHeight="47.0" prefWidth="962.0" style="-fx-background-color: #7b7b7b;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <ToggleButton id="button1" fx:id="labelsOnOffBtn" layoutX="86.0" layoutY="4.0" mnemonicParsing="false" onAction="#labelsOnOff" prefHeight="38.0" prefWidth="95.0" stylesheets="@CSS/instrumentOptions.css" />
+            <ToggleButton id="button2" fx:id="labelsAllOneBtn" layoutX="180.0" layoutY="4.0" mnemonicParsing="false" onAction="#labelsAllOrOne" prefHeight="38.0" prefWidth="274.0" stylesheets="@CSS/instrumentOptions.css" visible="false" />
+            <ToggleButton id="button3" fx:id="labelsNoteMidiBtn" layoutX="450.0" layoutY="4.0" mnemonicParsing="false" onAction="#labelsNoteOrMidi" prefHeight="38.0" prefWidth="186.0" stylesheets="@CSS/instrumentOptions.css" visible="false" />
+
+			<ToggleButton id="ud1" fx:id="semibreveBtn" layoutX="653.0" layoutY="4.0" mnemonicParsing="false" onAction="#selectUnitDuration"  prefHeight="38.0" prefWidth="38.0" stylesheets="@CSS/instrumentOptions.css" />
+			<ToggleButton id="ud2" fx:id="minimBtn" layoutX="691.0" layoutY="4.0" mnemonicParsing="false" onAction="#selectUnitDuration" prefHeight="38.0" prefWidth="38.0" stylesheets="@CSS/instrumentOptions.css" />
+			<ToggleButton id="ud3" fx:id="crotchetBtn" layoutX="729.0" layoutY="4.0" mnemonicParsing="false" onAction="#selectUnitDuration" prefHeight="38.0" prefWidth="38.0" stylesheets="@CSS/instrumentOptions.css" />
+			<ToggleButton id="ud4" fx:id="quaverBtn" layoutX="767.0" layoutY="4.0" mnemonicParsing="false" onAction="#selectUnitDuration" prefHeight="38.0" prefWidth="38.0" stylesheets="@CSS/instrumentOptions.css" />
+            <ToggleButton id="ud5" fx:id="semiquaverBtn" layoutX="805.0" layoutY="4.0" mnemonicParsing="false" onAction="#selectUnitDuration" prefHeight="38.0" prefWidth="38.0" stylesheets="@CSS/instrumentOptions.css" />
+
+            <ImageView layoutX="3.0" layoutY="5.0"><image><Image url="@graphic/labelsText.jpg" /></image></ImageView>
+
+            <ScrollPane fx:id="scrollPaneForRegimeLabel" fitToHeight="true" fitToWidth="true" layoutX="852.0" layoutY="4.0" style="-fx-background-color: #7b7b7b;">
+			<content>
+               <ImageView fx:id="regimeLabel"><image><Image url="@graphic/regime1.jpg" /></image></ImageView>
+			</content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+
+   </children>
+</GridPane>

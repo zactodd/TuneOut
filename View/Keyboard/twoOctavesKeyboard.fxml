@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="twoOctavesKeyboardAnchorPane" minWidth="-Infinity" prefHeight="576.0" prefWidth="962.0" style="-fx-background-color: #7b7b7b;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Keyboard.TwoOctavesKeyboardController">
+
+</AnchorPane>

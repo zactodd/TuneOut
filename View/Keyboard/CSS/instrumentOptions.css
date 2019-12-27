@@ -1,0 +1,67 @@
+#button1 {
+    -fx-background-image: url('../graphic/labelsOnOffState2.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: #7b7b7b;
+}
+
+#button1:selected {
+    -fx-background-image: url('../graphic/labelsOnOffState1.jpg');
+}
+
+#button2 {
+    -fx-background-image: url('../graphic/labelsOneOrAllState1.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: #7b7b7b;
+}
+
+#button2:selected {
+    -fx-background-image: url('../graphic/labelsOneOrAllState2.jpg');
+}
+
+#button3 {
+    -fx-background-image: url('../graphic/labelsNoteOrMidiState1.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: #7b7b7b;
+}
+
+#button3:selected {
+    -fx-background-image: url('../graphic/labelsNoteOrMidiState2.jpg');
+}
+
+#ud1 {
+    -fx-background-image: url('../graphic/ud_1.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: #7b7b7b;
+}
+
+#ud2 {
+    -fx-background-image: url('../graphic/ud_2.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: #7b7b7b;
+}
+
+#ud3 {
+    -fx-background-image: url('../graphic/ud_3.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: #7b7b7b;
+}
+
+#ud4 {
+    -fx-background-image: url('../graphic/ud_4.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: #7b7b7b;
+}
+
+#ud5 {
+    -fx-background-image: url('../graphic/ud_5.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: #7b7b7b;
+}

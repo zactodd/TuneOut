@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="keyboardAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="937.0" stylesheets="@CSS/twoOctavesKeyboard.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Keyboard.KeyboardController">
+   <children>
+      <ImageView fitHeight="472.0" fitWidth="912.0" layoutX="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@graphic/firstOctave.jpg" /></image>
+      </ImageView>
+	  
+	  
+      <ImageView fx:id="DA_1" fitHeight="400.0" fitWidth="62.0" layoutX="28.0" layoutY="1.0" styleClass="imageVisib"><image><Image url="@graphic/shadowCleft.png" /></image></ImageView>
+	  <ImageView fx:id="DB_1" fitHeight="400.0" fitWidth="62.0" layoutX="93.0" layoutY="1.0" styleClass="imageVisib"><image><Image url="@graphic/shadowEB.png" /></image></ImageView>
+	  <ImageView fx:id="DC_2" fitHeight="400.0" fitWidth="62.0" layoutX="159.0" styleClass="imageVisib"><image><Image url="@graphic/shadowCF.png" /></image></ImageView>
+	  <ImageView fx:id="DD_2" fitHeight="400.0" fitWidth="62.0" layoutX="223.0" styleClass="imageVisib"><image><Image url="@graphic/shadowD.png" /></image></ImageView>
+	  <ImageView fx:id="DE_2" fitHeight="400.0" fitWidth="62.0" layoutX="288.0" styleClass="imageVisib"><image><Image url="@graphic/shadowEB.png" /></image></ImageView>
+	  <ImageView fx:id="DF_2" fitHeight="400.0" fitWidth="62.0" layoutX="353.0" styleClass="imageVisib"><image><Image url="@graphic/shadowCF.png" /></image></ImageView>
+	  <ImageView fx:id="DG_2" fitHeight="400.0" fitWidth="62.0" layoutX="418.0" styleClass="imageVisib"><image><Image url="@graphic/shadowG.png" /></image></ImageView>
+	  <ImageView fx:id="DA_2" fitHeight="400.0" fitWidth="62.0" layoutX="483.0" styleClass="imageVisib"><image><Image url="@graphic/shadowA.png" /></image></ImageView>
+	  <ImageView fx:id="DB_2" fitHeight="400.0" fitWidth="62.0" layoutX="548.0" styleClass="imageVisib"><image><Image url="@graphic/shadowEB.png" /></image></ImageView>
+	  <ImageView fx:id="DC_3" fitHeight="400.0" fitWidth="62.0" layoutX="614.0" styleClass="imageVisib"><image><Image url="@graphic/shadowCF.png" /></image></ImageView>
+	  <ImageView fx:id="DD_3" fitHeight="400.0" fitWidth="62.0" layoutX="679.0" styleClass="imageVisib"><image><Image url="@graphic/shadowD.png" /></image></ImageView>
+	  <ImageView fx:id="DE_3" fitHeight="400.0" fitWidth="62.0" layoutX="743.0" styleClass="imageVisib"><image><Image url="@graphic/shadowEB.png" /></image></ImageView>
+	  <ImageView fx:id="DF_3" fitHeight="400.0" fitWidth="62.0" layoutX="808.0" layoutY="1.0" styleClass="imageVisib"><image><Image url="@graphic/shadowCF.png" /></image></ImageView>
+	  <ImageView fx:id="DG_3" fitHeight="400.0" fitWidth="62.0" layoutX="874.0" layoutY="1.0" styleClass="imageVisib"><image><Image url="@graphic/shadowG.png" /></image></ImageView>
+
+	  <ImageView fx:id="DAS_1" fitHeight="262.0" fitWidth="43.0" layoutX="78.0" layoutY="1.0" styleClass="imageVisib"><image><Image url="@graphic/shadowBlack.jpg" /></image></ImageView>
+	  <ImageView fx:id="DCS_2" fitHeight="262.0" fitWidth="43.0" layoutX="192.0" layoutY="1.0" styleClass="imageVisib"><image><Image url="@graphic/shadowBlack.jpg" /></image></ImageView>
+	  <ImageView fx:id="DDS_2" fitHeight="262.0" fitWidth="43.0" layoutX="274.0" layoutY="1.0" styleClass="imageVisib"><image><Image url="@graphic/shadowBlack.jpg" /></image></ImageView>
+	  <ImageView fx:id="DFS_2" fitHeight="262.0" fitWidth="43.0" layoutX="385.0" layoutY="1.0" styleClass="imageVisib"><image><Image url="@graphic/shadowBlack.jpg" /></image></ImageView>
+	  <ImageView fx:id="DGS_2" fitHeight="262.0" fitWidth="43.0" layoutX="460.0" layoutY="1.0" styleClass="imageVisib"><image><Image url="@graphic/shadowBlack.jpg" /></image></ImageView>
+	  <ImageView fx:id="DAS_2" fitHeight="262.0" fitWidth="43.0" layoutX="535.0" layoutY="1.0" styleClass="imageVisib"><image><Image url="@graphic/shadowBlack.jpg" /></image></ImageView>
+	  <ImageView fx:id="DCS_3" fitHeight="262.0" fitWidth="43.0" layoutX="648.0" layoutY="1.0" styleClass="imageVisib"><image><Image url="@graphic/shadowBlack.jpg" /></image></ImageView>
+	  <ImageView fx:id="DDS_3" fitHeight="262.0" fitWidth="43.0" layoutX="729.0" layoutY="1.0" styleClass="imageVisib"><image><Image url="@graphic/shadowBlack.jpg" /></image></ImageView>
+      <ImageView fx:id="DFS_3" fitHeight="262.0" fitWidth="43.0" layoutX="840.0" layoutY="1.0" styleClass="imageVisib"><image><Image url="@graphic/shadowBlack.jpg" /></image></ImageView>
+      
+	  <Rectangle fx:id="shiftControlOnHold" arcHeight="5.0" arcWidth="5.0" fill="GREY" height="402.0" layoutX="26.0" stroke="BLACK" strokeType="INSIDE" width="912.0" />
+	  
+	  <Text fx:id="TA_1" fill="BLACK" layoutX="49.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TB_1" fill="BLACK" layoutX="115.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TC_2" fill="BLACK" layoutX="180.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TD_2" fill="BLACK" layoutX="245.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TE_2" fill="BLACK" layoutX="312.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TF_2" fill="BLACK" layoutX="377.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TG_2" fill="BLACK" layoutX="440.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TA_2" fill="BLACK" layoutX="504.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TB_2" fill="BLACK" layoutX="569.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TC_3" fill="BLACK" layoutX="636.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TD_3" fill="BLACK" layoutX="699.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TE_3" fill="BLACK" layoutX="766.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TF_3" fill="BLACK" layoutX="831.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TG_3" fill="BLACK" layoutX="895.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  	  
+	  <Text fx:id="TAS_1" fill="WHITE" layoutX="84.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="TCS_2" fill="WHITE" layoutX="200.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TDS_2" fill="WHITE" layoutX="278.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TFS_2" fill="WHITE" layoutX="392.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TGS_2" fill="WHITE" layoutX="466.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TAS_2" fill="WHITE" layoutX="540.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TCS_3" fill="WHITE" layoutX="655.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TDS_3" fill="WHITE" layoutX="734.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  <Text fx:id="TFS_3" fill="WHITE" layoutX="847.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+	  
+      <Button fx:id="A_1" layoutX="28.0" layoutY="1.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="62.0" />
+      <Button fx:id="B_1" layoutX="93.0" layoutY="1.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="62.0" />
+      <Button fx:id="C_2" layoutX="159.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="62.0" />
+      <Button fx:id="D_2" layoutX="223.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="62.0" />
+      <Button fx:id="E_2" layoutX="288.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="62.0" />
+      <Button fx:id="F_2" layoutX="353.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="62.0" />
+      <Button fx:id="G_2" layoutX="418.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="62.0" />
+      <Button fx:id="A_2" layoutX="483.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="62.0" />
+      <Button fx:id="B_2" layoutX="548.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="62.0" />
+      <Button fx:id="C_3" layoutX="614.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="62.0" />
+      <Button fx:id="D_3" layoutX="679.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="62.0" />
+      <Button fx:id="E_3" layoutX="743.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="62.0" />
+      <Button fx:id="F_3" layoutX="808.0" layoutY="1.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="62.0" />
+      <Button fx:id="G_3" layoutX="874.0" layoutY="1.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="62.0" />
+	  
+      <Button fx:id="AS_1" layoutX="78.0" layoutY="1.0" mnemonicParsing="false" prefHeight="262.0" prefWidth="43.0" />
+      <Button fx:id="CS_2" layoutX="192.0" layoutY="1.0" mnemonicParsing="false" prefHeight="262.0" prefWidth="43.0" />
+      <Button fx:id="DS_2" layoutX="274.0" layoutY="1.0" mnemonicParsing="false" prefHeight="262.0" prefWidth="43.0" />
+      <Button fx:id="FS_2" layoutX="385.0" layoutY="1.0" mnemonicParsing="false" prefHeight="262.0" prefWidth="43.0" />
+      <Button fx:id="GS_2" layoutX="460.0" layoutY="1.0" mnemonicParsing="false" prefHeight="262.0" prefWidth="43.0" />
+      <Button fx:id="AS_2" layoutX="535.0" layoutY="1.0" mnemonicParsing="false" prefHeight="262.0" prefWidth="43.0" />
+      <Button fx:id="CS_3" layoutX="648.0" layoutY="1.0" mnemonicParsing="false" prefHeight="262.0" prefWidth="43.0" />
+      <Button fx:id="DS_3" layoutX="729.0" layoutY="1.0" mnemonicParsing="false" prefHeight="262.0" prefWidth="43.0" />
+      <Button fx:id="FS_3" layoutX="840.0" layoutY="1.0" mnemonicParsing="false" prefHeight="262.0" prefWidth="43.0" />
+	  
+   </children>
+</AnchorPane>

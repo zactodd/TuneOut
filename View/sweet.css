@@ -1,0 +1,382 @@
+@import url("default.css");
+
+.button {
+    -fx-text-fill: -fx-custom_bg;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 30;
+    -fx-border-color: -fx-custom_border;
+    -fx-font-family: "Comic Sans MS";
+    -fx-background-color: -fx-custom_blue;
+
+}
+
+.button#clearBtn {
+    -fx-graphic: url('ExploreCompose/graphic/clear_wht.png');
+}
+
+.button#clearBtn:hover {
+    -fx-graphic: url('ExploreCompose/graphic/clear.png');
+}
+
+.button#play {
+    -fx-graphic: url('ExploreCompose/graphic/play_small_wht.png');
+}
+
+.button#play:hover {
+    -fx-graphic: url('ExploreCompose/graphic/play_small.png');
+}
+
+.button:hover {
+    -fx-text-fill: -fx-custom_bg;
+    -fx-background-color: -fx-custom_pink_dark;
+}
+
+.check-box {
+    -fx-text-fill: -fx-custom_text;
+}
+
+.combo-box {
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: -fx-custom_bg;
+    -fx-text-fill: -fx-custom_text;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: -fx-custom_text;
+    -fx-text-fill: -fx-custom_bg;
+}
+
+.date-picker-popup {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+.date-picker-popup > .month-year-pane {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.date-picker-popup > * > .spinner > .button {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.date-picker-popup > * > .spinner > .button:focused {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.date-picker-popup > .calendar-grid {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.date-picker-popup > * > .date-cell {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+.date-picker-popup > * > .today {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.date-picker-popup > * > .day-name-cell,
+.date-picker-popup > * > .week-number-cell {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+.date-picker-popup > * > .day-cell:hover,
+.date-picker-popup > * > .day-cell:focused:hover,
+.date-picker-popup > * > .today:focused:hover,
+.date-picker-popup > * > .selected:focused,
+.date-picker-popup > * > .today.selected:focused {
+    -fx-text-fill: -fx-custom_bg;
+    -fx-background-color: -fx-custom_text;
+}
+
+.decoration-background {
+    -fx-background-color: -fx-custom_bg;
+}
+
+.dialog-pane .header-panel{
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+#error {
+    -fx-text-fill: red;
+}
+
+.label {
+    -fx-text-fill: -fx-custom_text;
+}
+
+.list-view {
+    -fx-border-color: -fx-custom_border;
+}
+
+.list-cell {
+    -fx-background-color: -fx-custom_bg;
+    -fx-text-fill: -fx-custom_text;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: -fx-custom_text;
+    -fx-text-fill: -fx-custom_bg;
+}
+
+.menu-bar {
+    -fx-background-color: -fx-custom_bg;
+    /*-fx-border-color: -fx-custom_border;*/
+}
+
+.menu-button {
+    -fx-background-color:  -fx-custom_pink_dark;
+    -fx-border-color: -fx-custom_border;
+    -fx-font-family: "Comic Sans MS";
+    -fx-border-radius: 25px;
+    -fx-background-radius: 30;
+}
+
+.menu-item {
+    -fx-text-fill: -fx-custom_bg;
+    -fx-background-color: -fx-custom_pink_dark;
+}
+
+.menu-item.label {
+    -fx-text-fill: -fx-custom_bg;
+}
+
+.menu:hover, .menu:showing {
+    -fx-background-color: -fx-custom_pink;
+}
+
+.menu .label {
+    -fx-text-fill: -fx-custom_bg;
+}
+
+.menu-item:hover {
+    -fx-background-color: -fx-custom_green;
+    -fx-border-color: -fx-custom_text;
+}
+
+.pane, .pane .content {
+    -fx-text-fill: -fx-custom_bg;
+    -fx-background-color: -fx-custom_bg;
+}
+
+.popover > .content {
+    -fx-background-color: -fx-custom_bg;
+}
+
+.popover > .content > .title > .text  {
+    -fx-text-fill: -fx-custom_bg;
+    -fx-background-color: -fx-custom_bg;
+    -fx-text-box-border: -fx-custom_border;
+}
+
+.progress-bar > .track {
+    -fx-text-box-border: -fx-custom_border;
+    -fx-control-inner-background: -fx-custom_bg;
+}
+
+.progress-bar .bar {
+    -fx-background-color: -fx-custom_text;
+}
+
+.radio-button, .radio-button .text {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+}
+
+.root {
+    -fx-text-fill: -fx-custom_bg;
+    -fx-background-color: -fx-custom_bg;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: -fx-custom_bg;
+}
+
+.tab {
+    -fx-background-color: -fx-custom_pink;
+    -fx-border-color: -fx-custom_border;
+    -fx-font-family: "Comic Sans MS";
+    -fx-border-radius: 25px;
+    -fx-background-radius: 30;
+}
+
+.tab .tab-label {
+    -fx-text-fill: -fx-custom_text;
+}
+
+.tab-pane, .tab-pane .tab-header-background {
+    -fx-background-color: -fx-custom_bg;
+    /*-fx-border-color: -fx-custom_border;*/
+}
+
+/*.tab-header-background {*/
+    /*-fx-background-image: url('/GUIimages/candyyyy.jpg');*/
+/*}*/
+
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: -fx-custom_orange;
+}
+
+.table-view {
+    -fx-border-color: -fx-custom_border;
+}
+
+.table-cell {
+    -fx-background-color: -fx-custom_bg;
+}
+
+.table-row-cell .table-cell {
+    -fx-text-fill: -fx-custom_text;
+}
+
+.table-view .column-header {
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: -fx-custom_text;
+}
+
+.table-view .column-header .arrow {
+    -fx-mark-color: -fx-custom_text;
+}
+
+.tree-table-view {
+    -fx-border-color: -fx-custom_border;
+}
+
+.tree-table-cell {
+    -fx-background-color: white;
+}
+
+.tree-table-cell:selected {
+    -fx-background-color: lightgreen;
+}
+
+.tree-table-row-cell .tree-table-cell {
+    -fx-text-fill: -fx-custom_text;
+}
+
+.tree-table-row-cell > .tree-disclosure-node > .arrow {
+    -fx-background-color: -fx-custom_text;
+}
+
+.tree-table-view .column-header {
+    -fx-background-color: -fx-custom_green;
+    -fx-border-color: -fx-custom_border;
+}
+
+.tree-table-view .column-header .label {
+    -fx-text-fill: white;
+}
+
+
+.text-field {
+    -fx-text-fill: black;
+    -fx-background-color: -fx-custom_bg_dark;
+    -fx-border-color: -fx-custom_border;
+}
+
+.text-area {
+    -fx-text-fill: black;
+    -fx-background-color: -fx-custom_bg_dark;
+    -fx-border-color: white;
+}
+
+.text-area .content {
+    -fx-border-color: -fx-custom_bg;
+    -fx-background-color: -fx-custom_bg_dark;
+}
+
+.titled-pane
+{
+    -fx-text-fill: -fx-custom_text;
+}
+
+.titled-pane > .title
+{
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.titled-pane > .title > .arrow-button .arrow
+{
+    -fx-background-color: -fx-custom_text;
+}
+
+.titled-pane:focused > .title > .arrow-button .arrow
+{
+    -fx-background-color: -fx-custom_text;
+}
+
+* {
+    -fx-custom_text: #000000;
+}
+
+* {
+    -fx-custom_bg: #ffffff;
+}
+
+* {
+    -fx-custom_bg_dark: white;
+}
+
+* {
+    -fx-custom_border: black;
+}
+
+* {
+    -fx-custom_pink: #FF003C;
+}
+
+* {
+    -fx-custom_pink_dark: #E80037;
+}
+
+* {
+    -fx-custom_blue: #0AA7E8;
+}
+
+* {
+    -fx-custom_green: #88C100;
+}
+
+* {
+    -fx-custom_orange: #FABE28;
+;
+}
+
+
+
+
+
+
+
+
+
+

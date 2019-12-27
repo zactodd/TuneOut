@@ -1,0 +1,338 @@
+@import url("default.css");
+
+.button {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.button#clearBtn {
+    -fx-graphic: url('LearningCompose/graphic/clear_wht.png');
+}
+
+.button#clearBtn:hover {
+    -fx-graphic: url('LearningCompose/graphic/clear.png');
+}
+
+.button#sheetPlayBtn {
+    -fx-graphic: url('LearningCompose/graphic/play_wht.png');
+}
+
+.button#sheetPlayBtn:hover {
+    -fx-graphic: url('LearningCompose/graphic/play.png');
+}
+.button#sheetStopBtn {
+    -fx-graphic: url('LearningCompose/graphic/stop_wht.png');
+}
+
+.button#sheetStopBtn:hover {
+    -fx-graphic: url('LearningCompose/graphic/stop.png');
+}
+
+
+.button#play {
+    -fx-graphic: url('LearningCompose/graphic/play_small_wht.png');
+}
+
+.button#play:hover {
+    -fx-graphic: url('LearningCompose/graphic/play_small.png');
+}
+
+.button:hover {
+    -fx-text-fill: -fx-custom_bg;
+    -fx-background-color: -fx-custom_text;
+}
+
+
+.check-box {
+    -fx-text-fill: -fx-custom_text;
+}
+
+.combo-box {
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: -fx-custom_bg;
+    -fx-text-fill: -fx-custom_text;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: -fx-custom_text;
+    -fx-text-fill: -fx-custom_bg;
+}
+
+.date-picker-popup {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+.date-picker-popup > .month-year-pane {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.date-picker-popup > * > .spinner > .button {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.date-picker-popup > * > .spinner > .button:focused {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.date-picker-popup > .calendar-grid {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.date-picker-popup > * > .date-cell {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+.date-picker-popup > * > .today {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.date-picker-popup > * > .day-name-cell,
+.date-picker-popup > * > .week-number-cell {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+.date-picker-popup > * > .day-cell:hover,
+.date-picker-popup > * > .day-cell:focused:hover,
+.date-picker-popup > * > .today:focused:hover,
+.date-picker-popup > * > .selected:focused,
+.date-picker-popup > * > .today.selected:focused {
+    -fx-text-fill: -fx-custom_bg;
+    -fx-background-color: -fx-custom_text;
+}
+
+.decoration-background {
+    -fx-background-color: -fx-custom_bg;
+}
+
+.dialog-pane .header-panel{
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+#testRepeatError{
+    -fx-text-fill: red;
+}
+
+#exploreCombo {
+    -fx-border-color: transparent;
+}
+
+#error {
+    -fx-text-fill: red;
+}
+
+#selectionError {
+    -fx-text-fill: red;
+}
+
+.label {
+    -fx-text-fill: -fx-custom_text;
+}
+
+.list-view {
+    -fx-border-color: -fx-custom_border;
+}
+
+.list-cell {
+    -fx-background-color: -fx-custom_bg;
+    -fx-text-fill: -fx-custom_text;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: -fx-custom_text;
+    -fx-text-fill: -fx-custom_bg;
+}
+
+.menu-bar {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.menu-button {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+}
+
+.menu-item {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+}
+
+.menu:hover, .menu:showing {
+    -fx-background-color: deepskyblue;
+}
+
+.menu-item:hover {
+    -fx-background-color: deepskyblue;
+}
+
+.pane, .pane .content {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+}
+
+.popover > .content {
+    -fx-background-color: -fx-custom_bg;
+}
+
+.popover > .content > .title > .text  {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-text-box-border: -fx-custom_border;
+}
+
+.progress-bar > .track {
+    -fx-text-box-border: -fx-custom_border;
+    -fx-control-inner-background: -fx-custom_bg;
+}
+
+.progress-bar .bar {
+    -fx-background-color: -fx-custom_text;
+}
+
+.radio-button, .radio-button .text {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+}
+
+.root {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: -fx-custom_bg;
+}
+
+.tab {
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.tab .tab-label {
+    -fx-text-fill: -fx-custom_text;
+}
+
+.tab-pane, .tab-pane .tab-header-background {
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.table-view {
+    -fx-border-color: -fx-custom_border;
+}
+
+.table-cell {
+    -fx-background-color: -fx-custom_bg;
+}
+
+.table-row-cell .table-cell {
+    -fx-text-fill: -fx-custom_text;
+}
+
+.table-view .column-header {
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: -fx-custom_text;
+}
+
+.table-view .column-header .arrow {
+    -fx-mark-color: -fx-custom_text;
+}
+
+.toggle-button:selected {
+    -fx-background-color: -fx-custom_text;
+    -fx-text-fill: -fx-custom_bg;
+}
+
+.tree-table-view {
+    -fx-border-color: -fx-custom_border;
+}
+
+.tree-table-cell {
+    -fx-background-color: -fx-custom_bg;
+}
+
+.tree-table-row-cell .tree-table-cell {
+    -fx-text-fill: -fx-custom_text;
+}
+
+.tree-table-row-cell > .tree-disclosure-node > .arrow {
+    -fx-background-color: -fx-custom_text;
+}
+
+.tree-table-view .column-header {
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.tree-table-view .column-header .label {
+    -fx-text-fill: -fx-custom_text;
+}
+
+.text-field {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.text-area {
+    -fx-text-fill: -fx-custom_text;
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.text-area .content {
+    -fx-border-color: -fx-custom_bg;
+    -fx-background-color: -fx-custom_bg;
+}
+
+.titled-pane
+{
+    -fx-text-fill: -fx-custom_text;
+}
+
+.titled-pane > .title
+{
+    -fx-background-color: -fx-custom_bg;
+    -fx-border-color: -fx-custom_border;
+}
+
+.titled-pane > .title > .arrow-button .arrow
+{
+    -fx-background-color: -fx-custom_text;
+}
+
+.titled-pane:focused > .title > .arrow-button .arrow
+{
+    -fx-background-color: -fx-custom_text;
+}
+
+

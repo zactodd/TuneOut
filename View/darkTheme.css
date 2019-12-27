@@ -1,0 +1,23 @@
+@import url("base.css");
+
+#exploreCombo {
+    -fx-border-color: transparent;
+}
+
+* {
+    -fx-custom_text: white;
+}
+
+* {
+    -fx-custom_bg: black;
+}
+
+* {
+    -fx-custom_border: dimgray;
+}
+
+.toggle-button:selected {
+    -fx-background-color: -fx-custom_text;
+    -fx-text-fill: -fx-custom_bg;
+}
+

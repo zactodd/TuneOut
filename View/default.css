@@ -1,0 +1,110 @@
+.button {
+    -fx-border-radius: 25px;
+    -fx-background-radius: 30;
+}
+
+#exploreBtn,#a, #b, #c, #d, #e, #f, #g {
+    /*-fx-background-color: black,linear-gradient(#ff0000, #950400);*/
+    -fx-background-color: #000000,linear-gradient(#525252, #9e9e9e);
+    -fx-background-radius: 30,30,30;
+    -fx-background-insets: -1, 0;
+    -fx-text-fill: white;
+    /*font-color: white;*/
+}
+
+#exploreBtn:hover,#a:hover, #b:hover, #c:hover, #d:hover, #e:hover, #f:hover, #g:hover {
+    -fx-background-color: #000000,linear-gradient(#9e9e9e, #525252);
+}
+
+#exploreBtn:selected,#a:selected, #b:selected, #c:selected, #d:selected, #e:selected, #f:selected, #g:selected {
+    -fx-background-color: grey,linear-gradient(#ff0000, #950400);
+    -fx-background-radius: 30,30,30;
+    -fx-background-insets: -1, 0;
+    -fx-text-fill: white;
+}
+
+#exploreBtn:selected:hover,#a:selected:hover, #b:selected:hover, #c:selected:hover, #d:selected:hover, #e:selected:hover, #f:selected:hover, #g:selected:hover {
+    -fx-background-color: grey, linear-gradient(#950400, #ff0000);
+}
+
+#exploreLabel {
+    -fx-text-alignment: right;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+#exploreCombo {
+    -fx-background-color: #000000,linear-gradient(#9e9e9e, #525252);
+    -fx-background-radius: 30,30,30;
+    -fx-background-insets: -1, 0;
+    -fx-text-fill: white;
+    /*font-color: white;*/
+}
+
+#exploreCombo:hover {
+    -fx-background-color: #000000,linear-gradient(#525252, #9e9e9e);
+}
+
+#exploreCombo .list-cell {
+    -fx-background-color: #000000,linear-gradient(#9e9e9e, #525252);
+    -fx-background-radius: 30,30,30;
+    -fx-background-insets: -1, 0;
+    -fx-text-fill: white;
+}
+
+#exploreCombo .combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: grey, linear-gradient(#950400, #ff0000);
+    -fx-text-fill: white;
+}
+
+#sheet {
+    -fx-border-color: #7c7c7c;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5.0;
+}
+
+#arrowBtn {
+    /*-fx-background-color: #000000,linear-gradient(#525252, #9e9e9e);*/
+    -fx-background-color: transparent;
+    -fx-background-radius: 30,30,30;
+    -fx-background-insets: 0;
+    -fx-border-color: transparent;
+}
+
+#arrowBtn:hover {
+    -fx-background-color: linear-gradient(#b8b8b8, #949494);
+    -fx-text-fill: white;
+}
+
+#menuExploreBtn {
+    -fx-background-color: #000000,linear-gradient(#9e9e9e, #525252);
+    -fx-background-radius: 30,30,30;
+    -fx-background-insets: -1, 0;
+    -fx-text-fill: white;
+}
+
+#menuExploreBtn .label {
+    -fx-text-fill: white;
+
+}
+
+#menuExploreBtn .menu-bar {
+    -fx-text-fill: white;
+    -fx-background-color: #000000,linear-gradient(#9e9e9e, #525252);
+}
+
+#menuExploreBtn .menu-button {
+    -fx-text-fill: white;
+    -fx-background-color: #000000,linear-gradient(#9e9e9e, #525252);
+}
+
+#menuExploreBtn .menu-item {
+    -fx-text-fill: white;
+    -fx-background-color: #000000,linear-gradient(#9e9e9e, #525252);
+}
+
+#menuExploreBtn .button {
+    -fx-text-fill: white;
+    -fx-background-color: #000000,linear-gradient(#9e9e9e, #525252);
+}

@@ -1,0 +1,13 @@
+@import url("base.css");
+
+* {
+    -fx-custom_text: white;
+}
+
+* {
+    -fx-custom_bg: slategray;
+}
+
+* {
+    -fx-custom_border: dimgray;
+}

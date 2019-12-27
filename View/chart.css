@@ -1,0 +1,20 @@
+.default-color0.chart-bar { -fx-bar-fill: CHART_COLOR_3 }
+.default-color1.chart-bar { -fx-bar-fill: 	#C02F1E }
+
+.default-color0.chart-line-symbol { -fx-background-color: CHART_COLOR_3, white; }
+.default-color1.chart-line-symbol { -fx-background-color: CHART_COLOR_2, white; }
+.default-color2.chart-line-symbol { -fx-background-color: CHART_COLOR_1, white; }
+.chart-series-line {
+    -fx-stroke: CHART_COLOR_1;
+    -fx-stroke-width: 1px;
+}
+.default-color0.chart-series-line { -fx-stroke: CHART_COLOR_3; }
+.default-color1.chart-series-line { -fx-stroke: CHART_COLOR_2; }
+.default-color2.chart-series-line { -fx-stroke: CHART_COLOR_1; }
+.chart-series-line-fill {
+    -fx-stroke: null;
+    -fx-fill: CHART_COLOR_1_TRANS_20;
+}
+.default-color0.chart-series-line-fill { -fx-fill: CHART_COLOR_3_TRANS_20; }
+.default-color1.chart-series-line-fill { -fx-fill: CHART_COLOR_2_TRANS_20; }
+.default-color2.chart-series-line-fill { -fx-fill: CHART_COLOR_1_TRANS_20; }

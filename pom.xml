@@ -118,7 +118,7 @@
           </execution>
         </executions>
         <configuration>
-          <cupDefinition>src/main/cup/dsl.cup</cupDefinition>
+          <cupDefinition>src/Environment/dsl.cup</cupDefinition>
           <className>DslParser</className>
           <symbolsName>DslSymbol</symbolsName>
         </configuration>
@@ -131,7 +131,7 @@
           <transformers>
             <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
               <manifestEntries>
-                <Main-Class>seng302.App</Main-Class>
+                <Main-Class>App.App</Main-Class>
                 <X-Compile-Source-JDK>1.8</X-Compile-Source-JDK>
                 <X-Compile-Target-JDK>1.8</X-Compile-Target-JDK>
               </manifestEntries>
@@ -160,7 +160,7 @@
             <configuration>
               <tasks>
                 <echo>Using env.test.properties</echo>
-                <copy file="${basedir}/src/main/Resources/Help/commands.txt" tofile="${basedir}/target/Help/commands.txt"/>
+                <copy file="${basedir}/src/main/Resources/main.Help/commands.txt" tofile="${basedir}/target/main.Help/commands.txt"/>
                 <copy todir="${basedir}/target/ManualTests/">
                   <fileset dir="${basedir}/src/test/Resources/ManualTests/" />
                 </copy>
@@ -185,11 +185,11 @@
     </plugins>
     <resources>
       <resource>
-        <directory>src/main/Resources</directory>
+        <directory>Main/Resources</directory>
         <filtering>true</filtering>
       </resource>
       <resource>
-        <directory>src/main/ResourcesSound</directory>
+        <directory>Main/ResourcesSound</directory>
         <filtering>false</filtering>
       </resource>
     </resources>

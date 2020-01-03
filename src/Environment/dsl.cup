@@ -1,0 +1,110 @@
+package TuneOut;
+
+import java_cup.runtime.*;
+import Model.command.*;
+import java.util.ArrayList;
+import java.util.List;
+
+/*
+    The following block lets you inject code into the parser class
+
+    See: http://www2.cs.tum.edu/projects/cup/docs.php#parser
+*/
+
+parser code {:
+    public void report_error(String message, Object info) {
+
+    }
+
+    public void syntax_error(Symbol cur_token) {
+
+    }
+:};
+
+/* Terminal tokens returns by the lexer */
+terminal COMMAND_SHOWVERSION, COMMAND_MIDI, COMMAND_NOTE, COMMAND_SEMITONE, COMMAND_ISENHARMONIC, COMMAND_ENHARMONIC,
+COMMAND_ENHARMONICHIGH, COMMAND_ENHARMONICLOW, COMMAND_MAJORSCALE, COMMAND_HELP, COMMAND_TEMPO, COMMAND_SET_TEMPO, COMMAND_PLAY, COMMAND_DEFINE_TERM;
+terminal OPEN_PARENTHESIS, CLOSE_PARENTHESIS, COMMA, QUOTATION_MARK;
+terminal String NOTE;
+terminal String OVERRIDES;
+terminal Integer NUMBER;
+terminal String STRING;
+
+
+/* Non terminals */
+non terminal Command command;
+non terminal List<Integer> arg_list;
+non terminal List<String> expr;
+non terminal List<String> csv;
+non terminal List<String> str_csv;
+non terminal String const;
+non terminal String str;
+non terminal List<String> noParameter;
+
+command ::= COMMAND_SHOWVERSION noParameter
+        {: RESULT = new ShowVersionCommand(); :}
+        | COMMAND_MIDI expr:e
+        {: RESULT = new MidiCommand(e); :}
+        | COMMAND_NOTE expr:e
+        {: RESULT = new NoteCommand(e); :}
+        | COMMAND_SEMITONE expr:e
+        {: RESULT = new SemitoneCommand(e); :}
+        | COMMAND_ENHARMONIC expr:e
+        {: RESULT = new EnharmonicCommand(e); :}
+        | COMMAND_ENHARMONICHIGH expr:e
+        {: RESULT = new EnharmonicHighCommand(e); :}
+        | COMMAND_ENHARMONICLOW expr:e
+        {: RESULT = new EnharmonicLowCommand(e); :}
+        | COMMAND_HELP expr:e
+        {: RESULT = new HelpCommand(e); :}
+        | COMMAND_TEMPO noParameter
+        {: RESULT = new GetTempoCommand(); :}
+        | COMMAND_SET_TEMPO expr:e
+        {: RESULT = new SetTempoCommand(e); :}
+        | COMMAND_PLAY expr:e
+        {: RESULT = new PlayCommand(e); :}
+;
+
+arg_list ::= arg_list:list NUMBER:n {: list.add(n); RESULT = list; :}
+        | NUMBER:n
+        {: RESULT = new ArrayList<Integer>(); RESULT.add(n); :}
+;
+
+expr ::= OPEN_PARENTHESIS csv:list CLOSE_PARENTHESIS
+        {: RESULT = list; :}
+        | noParameter
+        {: RESULT = null; :}
+        | OPEN_PARENTHESIS QUOTATION_MARK str_csv:list QUOTATION_MARK CLOSE_PARENTHESIS
+        {: RESULT = list; :}
+;
+
+
+csv ::= csv:list COMMA const:c {: list.add(c); RESULT = list; :}
+        | const:c
+        {: RESULT = new ArrayList<String>(); RESULT.add(c); :}
+;
+
+str_csv ::= str_csv:list COMMA str:s {: list.add(s); RESULT = list; :}
+        | str:s
+        {: RESULT = new ArrayList<String>(); RESULT.add(s); :}
+;
+
+
+const ::= NOTE:note
+        {: RESULT = note; :}
+        | NUMBER:n
+        {: RESULT = n.toString(); :}
+        | OVERRIDES:o
+        {: RESULT = o; :}
+
+;
+
+str ::= STRING:s
+        {: RESULT = s; :}
+
+;
+
+
+noParameter ::= OPEN_PARENTHESIS CLOSE_PARENTHESIS
+        {: RESULT = null; :}
+;
